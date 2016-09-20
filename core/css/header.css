@@ -71,9 +71,9 @@
 	background-image: url('../img/logo-icon.svg');
 	background-repeat: no-repeat;
 	background-size: 175px;
-	background-position: center 30px;
+	background-position: bottom;
 	width: 252px;
-	height: 120px;
+	height: 150px;
 	margin: 0 auto;
 }
 
