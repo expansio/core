@@ -448,6 +448,7 @@ html.ie8 #fileList tr.selected td.filename>.selectCheckBox {
 	position: absolute;
 	width: 50px;
 	z-index: 5;
+	padding-left:40px;
 }
 #fileList tr td.filename>.selectCheckBox {
 	/* sometimes checkbox height is bigger (KDE/Qt), so setting to absolute
@@ -488,7 +489,8 @@ html.ie8 #fileList tr.selected td.filename>.selectCheckBox {
 	float: left;
 }
 #fileList tr td.filename .action-favorite {
-	display: block;
+	/*display: block;*/
+	display: none !important;
 	float: left;
 	width: 30px;
 	line-height: 100%;

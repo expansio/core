@@ -25,7 +25,7 @@
 
 /* move Deleted Files to bottom of sidebar */
 .nav-trashbin {
-	position: fixed !important;
+	/*position: fixed !important;*/
 	bottom: 44px;
 	width: inherit !important;
 	background-color: #fff;
