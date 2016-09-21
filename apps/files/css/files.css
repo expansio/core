@@ -584,12 +584,12 @@ html.ie8 .column-mtime .selectedActions {
 #fileList a.action.action-share {
 	padding: 17px 14px;
 }
-.action-share{
+.action{
     position: relative;
     display: inline-block;
 }
 
-.action-share .share-tooltip{
+.action .share-tooltip{
     visibility: hidden;
     width: 50px;
     background-color: #1d2d44;
@@ -603,9 +603,10 @@ html.ie8 .column-mtime .selectedActions {
     margin-left: -30px;
 	height: 30px;
 	line-height: 30px;
+	opacity:1 !important;
 }
 
-.action-share .share-tooltip::after {
+.action .share-tooltip::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -616,7 +617,7 @@ html.ie8 .column-mtime .selectedActions {
     border-color: black transparent transparent transparent;
 }
 
-.action-share:hover .share-tooltip{
+.action:hover .share-tooltip{
     visibility: visible;
 }
 
@@ -668,8 +669,8 @@ html.ie8 .column-mtime .selectedActions {
 #fileList tr:focus a.action:focus,
 #fileList .name:focus a.action:focus {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-	filter: alpha(opacity=70);
-	opacity: 7;
+	filter: alpha(opacity=70) !important;
+	opacity: 7 !important;
 	display:inline;
 }
 #fileList tr a.action.disabled {

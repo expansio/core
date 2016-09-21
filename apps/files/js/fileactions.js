@@ -19,6 +19,7 @@
 			'{{#unless hasDisplayName}}<span class="hidden-visually">{{altText}}</span>{{/unless}}' +
 		'{{/if}}' +
 		'{{#if displayName}}<span> {{displayName}}</span>{{/if}}' +
+		'<span class="share-tooltip">{{nameLowerCase}}</span>'+
 		'</a>';
 
 	/**
