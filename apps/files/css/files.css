@@ -580,8 +580,44 @@ html.ie8 .column-mtime .selectedActions {
 	opacity: 0;
 	display:none;
 }
+
 #fileList a.action.action-share {
 	padding: 17px 14px;
+}
+.action-share{
+    position: relative;
+    display: inline-block;
+}
+
+.action-share .share-tooltip{
+    visibility: hidden;
+    width: 50px;
+    background-color: #1d2d44;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 45px;
+    margin-left: -30px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.action-share .share-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.action-share:hover .share-tooltip{
+    visibility: visible;
 }
 
 #fileList a.action.action-menu {
@@ -812,6 +848,9 @@ html.ie8 #controls .button.new {
 	display: inline-block;
 	vertical-align: middle;
 	background-size: 16px 16px;
+}
+#controls .actions .button .icon.icon-add{
+	background-size: 20px 20px;
 }
 
 #filestable .filename .action .icon.hidden,

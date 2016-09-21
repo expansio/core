@@ -36,6 +36,7 @@
 	width: inherit;
 	overflow: auto;
 	box-sizing: border-box;
+	padding-top:15px;
 }
 #app-navigation li {
 	position: relative;

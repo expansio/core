@@ -92,7 +92,7 @@
 #app-navigation-toggle {
 	position: fixed;
 	display: inline-block !important;
-	top: 45px;
+	top: 83px;
 	left: 0;
 	width: 44px;
 	height: 44px;
@@ -152,7 +152,7 @@ table.multiselect thead {
 /* fix controls bar jumping when navigation is slid out */
 .snapjs-left #app-navigation-toggle,
 .snapjs-left #controls {
-	top: 0;
+	top: 13px;
 }
 .snapjs-left table.multiselect thead {
 	top: 44px;

@@ -186,6 +186,8 @@ class ViewController extends Controller {
 		\OCP\Util::addscript('files', 'files');
 		\OCP\Util::addscript('files', 'keyboardshortcuts');
 		\OCP\Util::addscript('files', 'navigation');
+		
+		\OCP\Util::addscript('files', 'ownScrpits');
 
 		// if IE8 and "?dir=path&view=someview" was specified, reformat the URL to use a hash like "#?dir=path&view=someview"
 		$isIE8 = $this->request->isUserAgent([Request::USER_AGENT_IE_8]);

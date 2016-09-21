@@ -82,4 +82,3 @@
 	OCA.Files.FileInfoModel = FileInfoModel;
 
 })(OC, OCA);
-

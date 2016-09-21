@@ -106,6 +106,8 @@
 
 	$(document).ready(function () {
 		registerAppsSlideToggle();
+		
+		$('a.action-share').append('<span>Share</span>');
 	});
 
 }(document, jQuery, OC));
