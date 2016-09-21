@@ -94,14 +94,14 @@ a.two-factor-cancel {
 /* Searchbox */
 .searchbox input[type="search"] {
 	position: relative;
-	font-size: 1.2em;
+	font-size: 1.8em;
 	padding: 3px;
 	padding-left: 25px;
 	background: transparent url('../img/actions/search-white.svg') no-repeat 6px center;
 	color: #fff;
 	border: 0;
 	border-radius: 3px;
-	margin-top: 9px;
+	margin-top: 15px;
 	float: right;
 	width: 0;
 	cursor: pointer;
@@ -124,7 +124,7 @@ a.two-factor-cancel {
 #controls {
 	box-sizing: border-box;
 	position: fixed;
-	top: 45px;
+	top: 83px;
 	right: 0;
 	left: 0;
 	height: 44px;
@@ -175,7 +175,7 @@ a.two-factor-cancel {
 	height: 100%;
 	width: 100%;
 	overflow-x: hidden; /* prevent horizontal scrollbar */
-	padding-top: 45px;
+	padding-top: 83px;
 	box-sizing:border-box;
 }
 /* allow horizontal scrollbar for personal and admin settings */

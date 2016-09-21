@@ -36,10 +36,11 @@
 	left: 0;
 	right: 0;
 	z-index: 2000;
-	height: 45px;
+	height: 70px;
 	line-height: 2.5em;
 	background-color: #1d2d44;
 	box-sizing: border-box;
+	box-shadow: 0 1px 10px rgba(50, 50, 50, .5);
 }
 
 
@@ -50,9 +51,9 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 5px;
+	padding: 10px;
 	padding-bottom: 0;
-	height: 45px; /* header height */
+	height: auto; /* header height */
 	box-sizing: border-box;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	opacity: 1;
@@ -82,12 +83,14 @@
 	display: inline-block;
 	background-image: url(../img/logo-icon.svg);
 	background-repeat: no-repeat;
-	width: 62px;
-	height: 34px;
+    background-size: cover;
+	width: 60px;
+	height: 50px;
 }
 
 #header .header-appname-container {
-	display: inline-block;
+	/*display: inline-block;*/
+	display:none;
 	position: absolute;
 	left: 70px;
 	height: 27px;
@@ -144,19 +147,20 @@
 
 #navigation {
 	position: fixed;
-	top: 45px;
-	left: 10px;
+	top: 0;
+	left: 80px;
 	width: 265px;
-	max-height: 85%;
+	height:70px;
 	margin-top: 0;
+	display:inline-block !important;
+	/*display: none;
 	padding-bottom: 10px;
-	background-color: rgba(0, 0, 0, .97);
-	box-shadow: 0 1px 10px rgba(50, 50, 50, .7);
 	border-radius: 3px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
-	display: none;
-	/*overflow-y: auto;
+	box-shadow: 0 1px 10px rgba(50, 50, 50, .7);
+	background-color: rgba(0, 0, 0, .97);
+	overflow-y: auto;
 	overflow-x: hidden;*/
 	z-index: 2000;
 }
@@ -196,7 +200,7 @@
 	height: 80px;
 	display: inline-block;
 	text-align: center;
-	padding: 20px 0;
+	padding-top: 5px;
 }
 #navigation a span {
 	display: inline-block;
@@ -304,8 +308,9 @@
 }
 #expand {
 	display: block;
-	padding: 7px 30px 6px 10px;
+	padding: 0 30px 0 10px;
 	cursor: pointer;
+	line-height:70px;
 }
 #expand * {
 	cursor: pointer;
@@ -329,7 +334,7 @@
 #expanddiv {
 	position: absolute;
 	right: 10px;
-	top: 45px;
+	top: 60px;
 	z-index: 2000;
 	display: none;
 	background-color: rgba(0, 0, 0, .97);
@@ -359,6 +364,10 @@
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 		opacity: 1;
 	}
+	
+#expandDisplayName{
+	font-size:15px;
+}
 
 /* do not show display name when profile picture is present */
 #header .avatardiv.avatardiv-shown + #expandDisplayName {
