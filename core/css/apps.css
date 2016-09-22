@@ -38,11 +38,50 @@
 	box-sizing: border-box;
 	padding-top:15px;
 }
+
 #app-navigation li {
 	position: relative;
 	width: 100%;
 	box-sizing: border-box;
+	
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
+
+#app-navigation li:active {
+	border-color: #17954c;
+	color: #17954c;
+}
+
+#app-navigation li:hover {
+	background: rgba(47, 52, 64, 0.1);
+}
+
+#app-navigation li:before {
+	position: absolute;
+	content:url('../img/actions/arrow.png');
+	height: 100%;
+	font-size: 125%;
+	line-height: 45px;
+	color: #fff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#app-navigation li:before {
+	left: 80%;
+	opacity: 0;
+	top: 0;
+}
+
+#app-navigation li:hover:before {
+	left: 90%;
+	opacity: 1;
+}
+
+
 
 #app-navigation .nav-favorites, #app-navigation  .nav-sharingin, #app-navigation  .nav-sharingout , #app-navigation .nav-sharinglinks{
 	display:none;
@@ -446,12 +485,12 @@
 	display: block;
 	background: #fff;
 	border-left: 1px solid #eee;
-	-webkit-transition: margin-right 300ms;
-	transition: margin-right 300ms;
 	overflow-x: hidden;
 	overflow-y: auto;
 	visibility: visible;
 	z-index: 500;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 #app-content.with-app-sidebar {
@@ -459,7 +498,7 @@
 }
 
 #app-sidebar.disappear {
-	visibility: hidden;
+	right:-100%;
 }
 
 /* APP-SETTINGS ---------------------------------------------------------------*/

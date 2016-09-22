@@ -69,6 +69,8 @@
 
 .app-files #app-content {
 	overflow-x: hidden;
+	-webkit-transition: margin-right 0.3s;
+	transition: margin-right 0.3s;
 }
 
 /* icons for sidebar */
@@ -164,6 +166,13 @@ table th .columntitle {
 	-moz-box-sizing: border-box;
 	vertical-align: middle;
 }
+table th.column-size .columntitle{
+	padding-right:0;
+}
+table th .selectedActions .download{
+	padding-right:30px;
+}
+
 table th .columntitle.name {
 	padding-left: 5px;
 	padding-right: 80px;
@@ -239,25 +248,34 @@ table th.column-last, table td.column-last {
 }
 table.multiselect thead {
 	position: fixed;
-	top: 89px;
+	top: 115px;
 	z-index: 10;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	left: 250px; /* sidebar */
 }
-
+/*
 table thead th {
 	background-color: #fff;
-}
+}*/
+
 table.multiselect thead th {
-	background-color: rgba(255, 255, 255, 0.95); /* like controls bar */
+	/*background-color: rgba(255, 255, 255, 0.95);  like controls bar */
 	color: #000;
 	font-weight: bold;
 	border-bottom: 0;
 }
 
+#app-content table.multiselect thead{
+	width:100% !important;
+	padding-right: 250px;
+	-webkit-transition: width 0.3s;
+	transition: width 0.3s;
+}
+
 #app-content.with-app-sidebar table.multiselect thead{
-	margin-right: 27%;
+	width:73% !important;
+	padding-right: 250px;
 }
 
 table.multiselect #headerName {
@@ -547,7 +565,7 @@ a.action > img {
 .selectedActions {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 20px;
 }
 .selectedActions a {
 	display: inline;
@@ -668,7 +686,7 @@ html.ie8 .column-mtime .selectedActions {
 #fileList tr:hover a.action:hover,
 #fileList tr:focus a.action:focus,
 #fileList .name:focus a.action:focus {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)" !important;
 	filter: alpha(opacity=70) !important;
 	opacity: 7 !important;
 	display:inline;
