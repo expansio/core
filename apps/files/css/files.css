@@ -301,6 +301,9 @@ table td.filename a.name {
 	line-height: 50px;
 	padding: 0;
 }
+table td.filename form{
+	padding-left:50px;
+}
 table td.filename .thumbnail {
 	display: inline-block;
 	width: 32px;
@@ -467,6 +470,9 @@ html.ie8 #fileList tr.selected td.filename>.selectCheckBox {
 	width: 50px;
 	z-index: 5;
 	padding-left:40px;
+}
+#app-content-trashbin #fileList tr td.filename label{
+	padding-left:0;
 }
 #fileList tr td.filename>.selectCheckBox {
 	/* sometimes checkbox height is bigger (KDE/Qt), so setting to absolute

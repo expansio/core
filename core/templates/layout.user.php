@@ -95,15 +95,22 @@
 				</ul>
 				</div>
 			</div>
+<!-- 
 
 			<form class="searchbox" action="#" method="post" role="search" novalidate>
 				<label for="searchbox" class="hidden-visually">
-					<?php p($l->t('Search'));?>
+-->
+					<?php // p($l->t('Search'));?>
+					<!-- 
+
 				</label>
 				<input id="searchbox" type="search" name="query"
 					value="" required
 					autocomplete="off" tabindex="5">
 			</form>
+			
+-->
+			
 		</div></header>
 
 		<nav role="navigation"><div id="navigation">
