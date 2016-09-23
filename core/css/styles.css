@@ -116,7 +116,7 @@ a.two-factor-cancel {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	opacity: .7;
 	height:44px;
-	top:103px;
+	top:16px;
 	margin: 0 0 0 10px;
 }
 
@@ -131,7 +131,7 @@ a.two-factor-cancel {
 
 .searchbox-label{
 	position:absolute;
-	top:113px;
+	top:27px;
 	left:45px;
 	opacity:0.57;
 	font-size:110%;
