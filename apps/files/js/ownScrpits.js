@@ -1,6 +1,6 @@
 
 var form = '<form class="searchbox" action="#" method="post" role="search" novalidate>'+
-	'<label for="searchbox" class="searchbox-label">Search</label>'+
+	'<label for="searchbox" class="searchbox-label">Szukaj</label>'+
 	'<input id="searchbox" type="search" name="query" value="" required autocomplete="off" tabindex="5">'+
 '</form>';
 

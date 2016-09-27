@@ -368,6 +368,25 @@
 #expandDisplayName{
 	font-size:15px;
 }
+#tourguid{
+	float: right;
+	color:white;
+	background-color: rgba(0,0,0,0);
+	height:70px;
+}
+#tourguid button{
+	 background-color: rgba(0,0,0,0);
+	border:0;
+	outline:0;
+	line-height: 70px;
+	padding:0 10px 0 0;
+	margin:0;
+	opacity:0.7;
+ }
+#tourguid button:hover, #tourguid button:focus, #tourguid button:active{
+	opacity:1;
+	color:white;
+}
 
 /* do not show display name when profile picture is present */
 #header .avatardiv.avatardiv-shown + #expandDisplayName {

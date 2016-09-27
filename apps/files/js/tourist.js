@@ -42,9 +42,11 @@
 
     Base.prototype.skipButtonTemplate = '<button class="btn btn-default btn-sm pull-right tour-next">Skip this step →</button>';
 
-    Base.prototype.nextButtonTemplate = '<button class="btn btn-primary btn-sm pull-right tour-next">Next step →</button>';
+    Base.prototype.nextButtonTemplate = '<button class="btn btn-primary btn-sm pull-right tour-next">Next</button>';
 
-    Base.prototype.finalButtonTemplate = '<button class="btn btn-primary btn-sm pull-right tour-next">Finish up</button>';
+    Base.prototype.exitButtonTemplate = '<button class="btn btn-primary btn-sm pull-right tour-close">Exit</button>';
+
+    Base.prototype.finalButtonTemplate = '<button class="btn btn-primary btn-sm pull-right tour-next tour-finish">Finish up</button>';
 
     Base.prototype.closeButtonTemplate = '<a class="btn btn-close tour-close" href="#"><i class="icon icon-remove"></i></a>';
 
@@ -176,6 +178,9 @@
       }
       if (step.nextButton) {
         buttons += step.final ? this.finalButtonTemplate : this.nextButtonTemplate;
+      }
+      if (step.closeButton) {
+        buttons += this.exitButtonTemplate;
       }
       return buttons;
     };

@@ -60,7 +60,9 @@
 			</a>
 
 			<div id="logo-claim" style="display:none;"><?php p($theme->getLogoClaim()); ?></div>
+
 			<div id="settings">
+
 				<div id="expand" tabindex="6" role="link" class="menutoggle">
 					<?php if ($_['enableAvatars']): ?>
 					<div class="avatardiv<?php if ($_['userAvatarSet']) { print_unescaped(' avatardiv-shown'); } else { print_unescaped('" style="display: none'); } ?>">
@@ -95,6 +97,9 @@
 				</ul>
 				</div>
 			</div>
+            <div id='tourguid'>
+                 <button id='start-tour' class='tourguid-button'>Tutorial</button>
+            </div>
 <!-- 
 
 			<form class="searchbox" action="#" method="post" role="search" novalidate>

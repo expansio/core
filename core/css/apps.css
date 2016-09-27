@@ -9,7 +9,9 @@
 	box-sizing: border-box;
 }
 
-
+a:hover, a:focus, a:active{
+	text-decoration: none !important;
+}
 
 
 
@@ -125,6 +127,7 @@
 #app-navigation .selected,
 #app-navigation .selected a {
 	opacity: 1;
+	text-decoration: none;
 }
 
 #app-navigation .collapse {
