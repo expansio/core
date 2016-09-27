@@ -262,8 +262,8 @@
 }
 
 #apps {
-	max-height: calc(100vh - 100px);
-	overflow:auto;
+	max-height: 70px;
+	overflow:hidden;
 }
 
 

@@ -155,6 +155,7 @@ class ViewController extends Controller {
 		$nav = new \OCP\Template('files', 'appnavigation', '');
 
 		// Load the files we need
+		
 		\OCP\Util::addStyle('files', 'files');
 		\OCP\Util::addStyle('files', 'upload');
 		\OCP\Util::addStyle('files', 'mobile');
@@ -186,6 +187,12 @@ class ViewController extends Controller {
 		\OCP\Util::addscript('files', 'files');
 		\OCP\Util::addscript('files', 'keyboardshortcuts');
 		\OCP\Util::addscript('files', 'navigation');
+		
+		
+		\OCP\Util::addStyle('files', 'bootstrap.min');
+		\OCP\Util::addScript('files', 'tourist');
+		\OCP\Util::addStyle('files', 'tourist');
+		\OCP\Util::addScript('files', 'wbesiteturistguide');
 		
 		\OCP\Util::addscript('files', 'ownScrpits');
 
