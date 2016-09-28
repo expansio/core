@@ -106,8 +106,14 @@
 
 	$(document).ready(function () {
 		registerAppsSlideToggle();
-		
 		$('a.action-share').append('<span>Share</span>');
+
+		if (!(window.location.href.indexOf("/files/") > -1)) {
+			$('#tourguid, #controls .actions').css('display','none');
+		}
+		else{
+			$('#tourguid, #controls .actions').css('display','');
+		}
 	});
 
 }(document, jQuery, OC));

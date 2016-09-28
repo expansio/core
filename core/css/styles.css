@@ -170,6 +170,10 @@ a.two-factor-cancel {
 	left: 0;
 }
 
+#controls .left > div{
+	display: block !important;
+}
+
 #controls .button,
 #controls button,
 #controls input[type='submit'],

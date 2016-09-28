@@ -157,7 +157,7 @@
         content: step.content,
         buttons: buttons,
         close_button: this._buildCloseButton(step),
-        counter: step.final ? '' : "step " + (step.index + 1) + " of " + step.total,
+        counter: "Krok " + (step.index + 1) + " z " + step.total,
         counter_class: step.final ? 'final' : ''
       })));
       if (!buttons) {

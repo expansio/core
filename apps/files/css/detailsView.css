@@ -6,6 +6,9 @@
 #app-sidebar .detailFileInfoContainer > div {
 	clear: both;
 }
+#app-sidebar .systemTagsInfoView{
+	display:none;
+}
 
 #app-sidebar .mainFileInfoView {
 	margin-right: 20px; /* accommodate for close icon */

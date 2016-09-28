@@ -13,7 +13,7 @@
 }
 
 .tourist-popover .popover-content {
-	padding: 10px 0 0 0;
+	padding: 40px 0 0 0;
 	min-width: 200px;
 }
 
@@ -29,12 +29,17 @@
 
 .tourist-popover .popover-content .tour-counter {
 	margin: 0;
-	padding: 0;
+	padding: 10px 23px;
 	position: absolute;
-	left: 10px;
-	bottom: 14px;
-	font-size: 11px;
-	color: #acacac;
+	left: 0;
+	top: 0;
+	font-size: 17px;
+	background-color: #eaeaea;
+	color: #757575;
+	width: calc(100% - 46px);
+	height:25px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 }
 
 .tourist-popover .tour-buttons {
@@ -79,17 +84,15 @@
 }
 
 .tour-container p {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.4;
 }
 
 .tourist-popover {
-	max-width: 350px;
+	max-width: 360px;
 	padding:15px;
 }
-.tour-counter{
-	display: none;
-}
+
 .no-buttons{
 	display: none;
 }

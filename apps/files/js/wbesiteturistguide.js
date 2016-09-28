@@ -88,12 +88,12 @@ $(window).load(function () {
 
 		}, {
 			//file details - version
-			content: '<p>Możesz tutaj wpisać nazwę użytkownika Expansio Docs, który natychmiastowo uzyska dostęp do Twojego pliku. Możesz także zaznaczyć widoczną poniżej opcję “Udostępnij link”. Każdy, kto otrzyma ten link, będzie mógł dostać się do Twojego pliku. Szybko i bezpiecznie – na serwerach Twojej firmy. Dane nie są wysyłane w żadne inne miejsce.</p>',
+			content: '<p>Możesz tutaj wpisać nazwę użytkownika Expansio Docs, który natychmiastowo uzyska dostęp do Twojego pliku. <br><br> Możesz także zaznaczyć widoczną poniżej opcję “Udostępnij link”. Każdy, kto otrzyma ten link, będzie mógł dostać się do Twojego pliku. Szybko i bezpiecznie – na serwerach Twojej firmy. Dane nie są wysyłane w żadne inne miejsce.</p>',
 			nextButton: true,
 			closeButton: true,
 			target: $('.tabsContainer'),
 			my: 'right bottom',
-			at: 'left center',
+			at: 'left bottom',
 		}, {
 			//file detaild - Share
 			content: '<p>Kliknij w zakładkę “Wersje”.</p>',
@@ -142,7 +142,7 @@ $(window).load(function () {
 
 		}, {
 			//Show menu
-			content: '<p>Expansio Docs oferuje znacznie więcej. Wystarczy kliknąć odpowiednią ikonę w górnym menu, żeby przejść do dodatkowych modułów. Integracja z pocztą e-mail, kalendarz, możliwość edytowania dokumentów w oknie przeglądarki i wiele innych. Jeśli chcesz zobaczyć więcej, skontaktuj się z Expansio – pokażemy Ci wszystkie możliwości.</p>',
+			content: '<p>Expansio Docs oferuje znacznie więcej. Wystarczy kliknąć odpowiednią ikonę w górnym menu, żeby przejść do dodatkowych modułów. Integracja z pocztą e-mail, kalendarz, możliwość edytowania dokumentów w oknie przeglądarki i wiele innych. <br><br> Jeśli chcesz zobaczyć więcej, skontaktuj się z Expansio – pokażemy Ci wszystkie możliwości.</p>',
 			highlightTarget: true,
 			nextButton: true,
 			target: $('#apps'),
