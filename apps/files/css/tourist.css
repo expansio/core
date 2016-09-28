@@ -1,9 +1,9 @@
 .tour-highlight {
 	background: transparent;
-	-moz-box-shadow: 0px 0px 7px 0px rgba(0, 241, 255, 0.701961);
-	-webkit-box-shadow: 0px 0px 7px 0px rgba(0, 241, 255, 0.701961);
-	-o-box-shadow: 0px 0px 7px 0px rgba(0, 241, 255, 0.701961);
-	box-shadow: 0px 0px 7px 0px rgba(0, 241, 255, 0.701961);
+	-moz-box-shadow: 0px 0px 7px 0px #c3df60;
+	-webkit-box-shadow: 0px 0px 7px 0px #c3df60;
+	-o-box-shadow: 0px 0px 7px 0px #c3df60;
+	box-shadow: 0px 0px 7px 0px #c3df60;
 	border-radius: 2px;
 }
 

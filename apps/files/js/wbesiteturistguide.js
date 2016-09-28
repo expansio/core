@@ -14,10 +14,15 @@ $(window).load(function () {
 			closeButton: true,
 			nextButton: true,
 			highlightTarget: true,
-			target: $('#fileList'),
 			my: 'top center',
-			at: 'bottom center'
-
+			at: 'bottom center',
+			setup: function (tour, options) {
+				var self = this;
+				setTimeout(function () {
+					tour.view.setTarget($('#fileList '), self);
+					tour.view.show()
+				}, 400)
+			},
 		}, {
 			//show List with files
 			content: '<p>Potem pokażę Ci, że możesz automatycznie synchronizować swoje dane na komputerze z Expansio Docs. Wszystko, co umieścisz w wybranym miejscu na Twoim komputerze pojawi się automatycznie w Expansio Docs i odwrotnie – każdy plik, jaki utworzysz w Expansio Docs pojawi się automatycznie na Twoim komputerze.</p>',
@@ -176,11 +181,13 @@ $(window).load(function () {
 	});
 
 	$('.start-tour').on('click', function () {
-		$('#intro').hide('500');
+		$('#intro').fadeOut( 800 );
 		TOUR.start();
 		isTourExecuted = true;
 		$('body').remove('#intro');
 	});
+
+
 });
 var intro = "<div id='intro'>" +
 	"<div class='intro-content'>" +
@@ -192,10 +199,9 @@ var intro = "<div id='intro'>" +
 
 // dispaly welcome page only on first login
 $(document).ready(function () {
-
-	if (localStorage.EDstorage != 1) {
+	//localStorage.clear();
+	if (localStorage.ExpansioDocsStorage != 1) {
 		$('body').prepend(intro);
-		localStorage.setItem('EDstorage', 1);
+		localStorage.setItem('ExpansioDocsStorage', 1);
 	}
-
 });
