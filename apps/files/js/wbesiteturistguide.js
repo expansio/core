@@ -10,8 +10,17 @@ $(window).load(function () {
 	var STEPS = [
 		{
 			//show List with files
-			content: '<p>To jest Twoja lista plików. Możesz w tym miejscu tworzyć foldery, umieszczać pliki tekstowe, pdf, zdjęcia, filmy i wszystkie inne – tak jak na Twoim własnym komputerze.</p>' +
-			'<p>Potem pokażę Ci, że możesz automatycznie synchronizować swoje dane na komputerze z Expansio Docs. Wszystko, co umieścisz w wybranym miejscu na Twoim komputerze pojawi się automatycznie w Expansio Docs i odwrotnie – każdy plik, jaki utworzysz w Expansio Docs pojawi się automatycznie na Twoim komputerze.</p>',
+			content: '<p>To jest Twoja lista plików. Możesz w tym miejscu tworzyć foldery, umieszczać pliki tekstowe, pdf, zdjęcia, filmy i wszystkie inne – tak jak na Twoim własnym komputerze.</p>',
+			closeButton: true,
+			nextButton: true,
+			highlightTarget: true,
+			target: $('#fileList'),
+			my: 'top center',
+			at: 'bottom center'
+
+		}, {
+			//show List with files
+			content: '<p>Potem pokażę Ci, że możesz automatycznie synchronizować swoje dane na komputerze z Expansio Docs. Wszystko, co umieścisz w wybranym miejscu na Twoim komputerze pojawi się automatycznie w Expansio Docs i odwrotnie – każdy plik, jaki utworzysz w Expansio Docs pojawi się automatycznie na Twoim komputerze.</p>',
 			closeButton: true,
 			nextButton: true,
 			highlightTarget: true,
@@ -85,7 +94,7 @@ $(window).load(function () {
 			target: $('.tabsContainer'),
 			my: 'right bottom',
 			at: 'left center',
-		},{
+		}, {
 			//file detaild - Share
 			content: '<p>Kliknij w zakładkę “Wersje”.</p>',
 			highlightTarget: true,
@@ -131,7 +140,7 @@ $(window).load(function () {
 			my: 'left center',
 			at: 'right center',
 
-		},{
+		}, {
 			//Show menu
 			content: '<p>Expansio Docs oferuje znacznie więcej. Wystarczy kliknąć odpowiednią ikonę w górnym menu, żeby przejść do dodatkowych modułów. Integracja z pocztą e-mail, kalendarz, możliwość edytowania dokumentów w oknie przeglądarki i wiele innych. Jeśli chcesz zobaczyć więcej, skontaktuj się z Expansio – pokażemy Ci wszystkie możliwości.</p>',
 			highlightTarget: true,
@@ -160,7 +169,7 @@ $(window).load(function () {
 			TOUR.start();
 			isTourExecuted = true;
 		}
-		else{
+		else {
 			TOUR.stop();
 			isTourExecuted = false;
 		}
@@ -170,27 +179,23 @@ $(window).load(function () {
 		$('#intro').hide('500');
 		TOUR.start();
 		isTourExecuted = true;
+		$('body').remove('#intro');
 	});
-
-	// $('.tour-buttons').on('click', '.tour-stop' , function (e) {
-	// 	e.preventDefault();
-	// 	TOUR.stop();
-	// 	isTourExecuted = false;
-	// });
-
-	$("body").on("click", ".tour-close", function() {
-		alert("Fired!");
-	});
-
 });
+var intro = "<div id='intro'>" +
+	"<div class='intro-content'>" +
+	"<h1>Cześć! Witamy w Expansio Docs. </h1><h2> W kolejnych krokach pokażemy Ci w jaki sposób od dzisiaj będziesz mógł zarządzac swoimi dokumentami.</h2>" +
+	"<button class='start-tour'>Poznaj Expansio Docs!</button>" +
+	"</div>" +
+	"</div>";
 
 
 // dispaly welcome page only on first login
 $(document).ready(function () {
 
-	if (localStorage.EDVisited != 1 ) {
-		$('#intro').css('display','block');
-		localStorage.setItem('EDVisited', 1);
+	if (localStorage.EDstorage != 1) {
+		$('body').prepend(intro);
+		localStorage.setItem('EDstorage', 1);
 	}
 
 });

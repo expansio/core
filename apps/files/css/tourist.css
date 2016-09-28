@@ -100,9 +100,11 @@
 	height:100%;
 	left:0;
 	top:0;
-	background-color: #193c5a;
+	background-color: #51B1AC;
 	text-align: center;
 	z-index:9999;
+}
+#intro.displayed{
 	display: none;
 }
 .intro-content{
@@ -134,7 +136,7 @@
 }
 
 #intro button:hover {
-	background-color: rgba(16, 31, 90, 0.5);
+	background-color: rgba(58, 116, 111, 0.5);
 
 }
 
