@@ -17,10 +17,7 @@ $(window).load(function () {
 			highlightTarget: true,
 			target: $('#fileList'),
 			my: 'top center',
-			at: 'bottom center',
-			setup: function () {
-				isTourExecuted = true;
-			}
+			at: 'bottom center'
 
 		}, {
 			//click on file
@@ -161,6 +158,7 @@ $(window).load(function () {
 	$('#start-tour').on('click', function () {
 		if (isTourExecuted == 0) {
 			TOUR.start();
+			isTourExecuted = true;
 		}
 		else{
 			TOUR.stop();
@@ -168,15 +166,31 @@ $(window).load(function () {
 		}
 	});
 
-	$('.tour-stop').on('click', function () {
-		if (isTourExecuted == 1) {
-			TOUR.stop();
-		}
-	} );
-	// $(document).on('mouseover', '.tourist-popover', function(){
-	// 	if(!$("#stop-tour").get(0)){
-	// 		$('.tourist-popover .tour-buttons').append('<button id="stop-tour">Exit</button>');
-	// 	}
+	$('.start-tour').on('click', function () {
+		$('#intro').hide('500');
+		TOUR.start();
+		isTourExecuted = true;
+	});
+
+	// $('.tour-buttons').on('click', '.tour-stop' , function (e) {
+	// 	e.preventDefault();
+	// 	TOUR.stop();
+	// 	isTourExecuted = false;
 	// });
+
+	$("body").on("click", ".tour-close", function() {
+		alert("Fired!");
+	});
+
+});
+
+
+// dispaly welcome page only on first login
+$(document).ready(function () {
+
+	if (localStorage.EDVisited != 1 ) {
+		$('#intro').css('display','block');
+		localStorage.setItem('EDVisited', 1);
+	}
 
 });

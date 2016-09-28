@@ -155,16 +155,7 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     height: auto
 }
-input[type=search] {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    -webkit-appearance: textfield
-}
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
-    -webkit-appearance: none
-}
+
 fieldset {
     padding: .35em .625em .75em;
     margin: 0 2px;
@@ -2585,11 +2576,6 @@ legend {
     border-bottom: 1px solid #e5e5e5
 }
 
-input[type=search] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-}
 input[type=checkbox],
 input[type=radio] {
     margin: 4px 0 0;
@@ -2671,9 +2657,7 @@ fieldset[disabled] .form-control {
 textarea.form-control {
     height: auto
 }
-input[type=search] {
-    -webkit-appearance: none
-}
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     input[type=date].form-control,
     input[type=time].form-control,

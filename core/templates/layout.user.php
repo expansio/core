@@ -30,8 +30,17 @@
 			<script src="<?php print_unescaped($jsfile); ?>"></script>
 		<?php endforeach; ?>
 		<?php print_unescaped($_['headers']); ?>
+
 	</head>
 	<body id="<?php p($_['bodyid']);?>">
+
+	<div id='intro'>
+        <div class='intro-content'>
+            <h1>Cześć! Witamy w Expansio Docs. </h1><h2> W kolejnych krokach pokażemy Ci w jaki sposób od dzisiaj będziesz mógł zarządzac swoimi dokumentami.</h2>
+            <button class='start-tour'>Poznaj Expansio Docs!</button>
+        </div>
+	</div>
+
 	<?php include('layout.noscript.warning.php'); ?>
 	<div id="notification-container">
 		<div id="notification"></div>

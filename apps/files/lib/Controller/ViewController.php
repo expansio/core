@@ -188,7 +188,7 @@ class ViewController extends Controller {
 		\OCP\Util::addscript('files', 'keyboardshortcuts');
 		\OCP\Util::addscript('files', 'navigation');
 		
-		
+
 		\OCP\Util::addStyle('files', 'bootstrap.min');
 		\OCP\Util::addScript('files', 'tourist');
 		\OCP\Util::addStyle('files', 'tourist');
