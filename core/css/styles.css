@@ -111,14 +111,15 @@ a.two-factor-cancel {
 	float: right;
 	width: 200px;
 	cursor: pointer;
-	-webkit-transition: all 100ms;
-	transition: all 100ms;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	opacity: .7;
 	height:44px;
 	top:16px;
 	margin: 0 0 0 10px;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
 }
+
 
 .searchbox input[type="search"]:focus,
 .searchbox input[type="search"]:active,
@@ -126,7 +127,7 @@ a.two-factor-cancel {
 	color: black;
 	width: 200px;
 	cursor: text;
-	background-color: #c2dcf2;
+	background-color: rgb(0,172,193);
 }
 
 .searchbox-label{
@@ -134,7 +135,9 @@ a.two-factor-cancel {
 	top:27px;
 	left:45px;
 	opacity:0.57;
-	font-size:110%;
+	font-size:120%;
+	color:white;
+	font-weight:500;
 }
 
 .searchbox-label.hover{
@@ -153,7 +156,7 @@ a.two-factor-cancel {
 	width: 100%;
 	padding: 0 20px 0 0;
 	margin: 0;
-	 background-color: rgba(255, 255, 255, .95);
+	 background-color: rgba(0, 0, 0, 0);
 	z-index: 50;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -161,6 +164,7 @@ a.two-factor-cancel {
 	user-select: none;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
+
 }
 /* position controls for apps with app-navigation */
 #app-navigation+#app-content #controls {
@@ -186,13 +190,16 @@ a.two-factor-cancel {
 	padding: 7px 10px
 }
 
+
 #controls .button.hidden {
 	display: none;
 }
 
 #controls .button.new{
+	padding:10px;
 	background-color:#C3DF60;
 	transition: all 0.5s;
+	border:0px;
 }
 
 #controls .button.new:hover, #controls .button.new:active, #controls .button.new:focus{

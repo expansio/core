@@ -199,7 +199,7 @@ var intro = "<div id='intro'>" +
 
 // dispaly welcome page only on first login
 $(document).ready(function () {
-	//localStorage.clear();
+		//localStorage.clear();
 	if (localStorage.ExpansioDocsStorage != 1) {
 		$('body').prepend(intro);
 		localStorage.setItem('ExpansioDocsStorage', 1);

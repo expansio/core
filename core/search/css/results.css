@@ -3,7 +3,7 @@
  See the COPYING-README file. */
 
 #searchresults {
-	background-color: #fff;
+	background-color: rgba(255,255,255,0.5);
 	overflow-x: hidden;
 	text-overflow: ellipsis;
 	padding-top: 65px;

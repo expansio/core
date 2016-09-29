@@ -10,4 +10,5 @@ $(document).ready(function() {
 		$('#searchbox').on('hover', function(){
 			$('.searchbox-label').toggleClass('hover');
 		});
+
 });

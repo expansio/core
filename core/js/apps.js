@@ -25,7 +25,7 @@
 	 *
 	 * @param {Object} [$el] sidebar element to show, defaults to $('#app-sidebar')
 	 */
-	exports.Apps.showAppSidebar = function($el) {
+	exports.Apps.showAppSidebar = function ($el) {
 		var $appSidebar = $el || $('#app-sidebar');
 		$appSidebar.removeClass('disappear');
 		$('#app-content').addClass('with-app-sidebar').trigger(new $.Event('appresized'));
@@ -38,7 +38,7 @@
 	 *
 	 * @param {Object} [$el] sidebar element to hide, defaults to $('#app-sidebar')
 	 */
-	exports.Apps.hideAppSidebar = function($el) {
+	exports.Apps.hideAppSidebar = function ($el) {
 		var $appSidebar = $el || $('#app-sidebar');
 		$appSidebar.addClass('disappear');
 		$('#app-content').removeClass('with-app-sidebar').trigger(new $.Event('appresized'));
@@ -67,13 +67,14 @@
 				var areaSelector = $(button).data('apps-slide-toggle');
 				var area = $(areaSelector);
 
-				function hideArea() {
-					area.slideUp(OC.menuSpeed*4, function() {
+				function hideArea () {
+					area.slideUp(OC.menuSpeed * 4, function () {
 						area.trigger(new $.Event('hide'));
 					});
 				}
-				function showArea() {
-					area.slideDown(OC.menuSpeed*4, function() {
+
+				function showArea () {
+					area.slideDown(OC.menuSpeed * 4, function () {
 						area.trigger(new $.Event('show'));
 					});
 				}
@@ -89,8 +90,8 @@
 							showArea();
 						}
 
-					// all other areas that have not been clicked but are open
-					// should be slid up
+						// all other areas that have not been clicked but are open
+						// should be slid up
 					} else {
 						var closest = $(event.target).closest(areaSelector);
 						if (area.is(':visible') && closest[0] !== area[0]) {
@@ -108,11 +109,23 @@
 		registerAppsSlideToggle();
 		$('a.action-share').append('<span>Share</span>');
 
-		if (!(window.location.href.indexOf("/files/") > -1)) {
-			$('#tourguid, #controls .actions').css('display','none');
+		if (window.location.href.indexOf("/settings/") > -1) {
+			$('#app-navigation li > a').css('opacity', '1');
+			$('#app-navigation ul').css('padding-top', '20px');
 		}
-		else{
-			$('#tourguid, #controls .actions').css('display','');
+		if (!(window.location.href.indexOf("/files/") > -1)) {
+			$('#tourguid, #controls .actions').css('display', 'none');
+			$('#controls').css({
+				'position': 'fixed',
+				'margin': '0'
+			});
+		}
+		else {
+			$('#tourguid, #controls .actions').css('display', '');
+			$('#controls').css({
+				'position': 'static',
+				'margin': '15px 0 10px 0'
+			});
 		}
 	});
 

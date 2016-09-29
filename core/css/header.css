@@ -38,9 +38,13 @@
 	z-index: 2000;
 	height: 70px;
 	line-height: 2.5em;
-	background-color: #193c5a;
+	background-color: #00798C;
 	box-sizing: border-box;
+	
+	-webkit-box-shadow: 0 1px 10px rgba(50, 50, 50, .5);
+	-moz-box-shadow: 0 1px 10px rgba(50, 50, 50, .5);
 	box-shadow: 0 1px 10px rgba(50, 50, 50, .5);
+	
 }
 
 
@@ -51,12 +55,17 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 10px;
+	padding: 5px;
 	padding-bottom: 0;
 	height: auto; /* header height */
 	box-sizing: border-box;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	opacity: 1;
+	width:250px;
+	height:70px;
+	/*background-color: #028092;*/
+	-webkit-box-shadow: 2px 0 5px -2px rgba(50,50,50,0.5);
+	box-shadow: 2px 0 5px -2px rgba(50,50,50,0.5);
 }
 #owncloud:focus {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
@@ -83,9 +92,16 @@
 	display: inline-block;
 	background-image: url(../img/logo-icon.svg);
 	background-repeat: no-repeat;
-    background-size: cover;
-	width: 60px;
-	height: 50px;
+    background-size: contain;
+	width: 80px;
+	height: 60px;
+	position: absolute;
+	left:50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 #header .header-appname-container {
@@ -148,7 +164,8 @@
 #navigation {
 	position: fixed;
 	top: 0;
-	left: 80px;
+	/*left: 80px;*/
+	left: 250px;
 	width: auto;
 	height:70px;
 	margin-top: 0;
@@ -196,7 +213,7 @@
 }
 #navigation a {
 	position: relative;
-	width: 80px;
+	width: 90px;
 	height: 80px;
 	display: inline-block;
 	text-align: center;
@@ -204,7 +221,7 @@
 }
 #navigation a span {
 	display: inline-block;
-	font-size: 13px;
+	font-size: 15px;
 	padding-bottom: 0;
 	padding-left: 0;
 	width: 80px;
@@ -233,8 +250,9 @@
 #navigation .app-icon {
 	margin: 0 auto;
 	padding: 0;
-	max-height: 32px;
-	max-width: 32px;
+	max-height: 45px;
+	max-width: 35px;
+	width:35px
 }
 
 /* Apps management */
@@ -367,7 +385,14 @@
 	
 #expandDisplayName{
 	font-size:15px;
+	color:white;
+	opacity:0.7;
 }
+
+#expandDisplayName:hover{
+	opacity:1;
+}
+
 #tourguid{
 	float: right;
 	color:white;

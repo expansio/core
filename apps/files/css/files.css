@@ -20,7 +20,7 @@
 
 .actions.creatable {
 	position: relative;
-	z-index: -30;
+	/*z-index: -30;*/
 }
 
 #trash {
@@ -46,7 +46,7 @@
 }
 
 #filestable.has-controls {
-	top: 44px;
+	/*top: 44px;*/
 }
 
 /* make sure there's enough room for the file actions */
@@ -71,11 +71,13 @@
 	overflow-x: hidden;
 	-webkit-transition: margin-right 0.3s;
 	transition: margin-right 0.3s;
+
+	background-image: url('../img/background.jpg');
 }
 
 /* icons for sidebar */
 .nav-icon-files {
-	background-image: url('../img/folder.svg');
+	background-image: url('../img/folder.png');
 }
 .nav-icon-favorites {
 	background-image: url('../img/star.svg');
@@ -91,7 +93,7 @@
 	background-image: url('../img/external.svg');
 }
 .nav-icon-trashbin {
-	background-image: url('../img/delete.svg');
+	background-image: url('../img/delete.png');
 }
 
 #app-navigation .nav-files a.nav-icon-files {
@@ -115,7 +117,7 @@
 }
 
 #filestable tbody tr {
-	background-color: #fff;
+	background-color: rgba(255,255,255,0.5);
 	height: 40px;
 }
 #filestable tbody tr:hover,
@@ -127,7 +129,7 @@
 #filestable tbody tr.selected,
 #filestable tbody tr.searchresult,
 table tr.mouseOver td {
-	background-color: #f8f8f8;
+	background-color: rgba(255,255,255, 0.7);
 }
 tbody a { color:#000; }
 
