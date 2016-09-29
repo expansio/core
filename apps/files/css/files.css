@@ -45,8 +45,8 @@
 	width: 100%;
 }
 
-#filestable.has-controls {
-	/*top: 44px;*/
+#app-content-trashbin #filestable.has-controls {
+	top: 44px;
 }
 
 /* make sure there's enough room for the file actions */
@@ -245,16 +245,16 @@ table th.column-last, table td.column-last {
 }
 
 /* Multiselect bar */
-#filestable.multiselect {
-	top: 95px;
-}
+/*#filestable.multiselect {*/
+	/*top: 95px;*/
+/*}*/
 table.multiselect thead {
-	position: fixed;
-	top: 115px;
+	/*position: fixed;*/
+	/*top: 115px;*/
 	z-index: 10;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	left: 250px; /* sidebar */
+	/*left: 250px; !* sidebar *!*/
 }
 /*
 table thead th {

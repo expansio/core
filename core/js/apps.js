@@ -113,6 +113,10 @@
 			$('#app-navigation li > a').css('opacity', '1');
 			$('#app-navigation ul').css('padding-top', '20px');
 		}
+		if (window.location.href.indexOf("/settings/") > -1) {
+			$('#app-navigation li > a').css('opacity', '1');
+			$('#app-navigation ul').css('padding-top', '20px');
+		}
 		if (!(window.location.href.indexOf("/files/") > -1)) {
 			$('#tourguid, #controls .actions').css('display', 'none');
 			$('#controls').css({

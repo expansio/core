@@ -106,7 +106,7 @@
 
 #header .header-appname-container {
 	/*display: inline-block;*/
-	display:none;
+	display:none !important;
 	position: absolute;
 	left: 70px;
 	height: 27px;
@@ -420,3 +420,12 @@
 #header #expand {
 	display: block;
 }
+
+#header #ocToolbar .padded a div{
+	display:none;
+}
+
+#header #ocToolbar .dijit button{
+	background-size: 15px 15px;
+}
+
