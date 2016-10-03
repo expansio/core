@@ -187,14 +187,23 @@ class ViewController extends Controller {
 		\OCP\Util::addscript('files', 'files');
 		\OCP\Util::addscript('files', 'keyboardshortcuts');
 		\OCP\Util::addscript('files', 'navigation');
-		
+
+
+
+		\OCP\Util::addStyle('files', 'animatedLetters');
+		\OCP\Util::addscript('files', 'segment.min');
+		\OCP\Util::addscript('files', 'd3-ease.v0.6');
+		\OCP\Util::addscript('files', 'letters');
+
 
 		\OCP\Util::addStyle('files', 'bootstrap.min');
 		\OCP\Util::addScript('files', 'tourist');
 		\OCP\Util::addStyle('files', 'tourist');
 		\OCP\Util::addScript('files', 'wbesiteturistguide');
-		
+
 		\OCP\Util::addscript('files', 'ownScrpits');
+
+		\OCP\Util::addscript('files', 'animatedLetters');
 
 		// if IE8 and "?dir=path&view=someview" was specified, reformat the URL to use a hash like "#?dir=path&view=someview"
 		$isIE8 = $this->request->isUserAgent([Request::USER_AGENT_IE_8]);

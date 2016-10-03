@@ -181,27 +181,37 @@ $(window).load(function () {
 	});
 
 	$('.start-tour').on('click', function () {
-		$('#intro').fadeOut( 800 );
+		$('#intro').fadeOut(800);
 		TOUR.start();
 		isTourExecuted = true;
 		$('body').remove('#intro');
 	});
 
 
+	$('#intro .intro-content .content').fadeIn(200);
+
+	$('#letterAnimation').click();
+	$('#intro-text').delay(2000).fadeIn(2000);
 });
-var intro = "<div id='intro'>" +
-	"<div class='intro-content'>" +
-	"<h1>Cześć! Witamy w Expansio Docs. </h1><h2> W kolejnych krokach pokażemy Ci w jaki sposób od dzisiaj będziesz mógł zarządzac swoimi dokumentami.</h2>" +
-	"<button class='start-tour'>Poznaj Expansio Docs!</button>" +
+
+
+var intro = '<div id="intro">' +
+	'<div class="intro-content">' +
+	'	<svg class="hidden"><symbol id="icon-play" viewBox="0 0 60 60">	<path d="m53.48 27.435l-42.807-26.52c-3.119-2.047-5.672-.541-5.672 3.346v51.48c0 3.885 2.553 5.391 5.672 3.346l42.807-26.52c0 0 1.521-1.07 1.521-2.566s-1.521-2.566-1.521-2.566" />' +
+	'	</symbol>	</svg>	<div class="container">	<section class="content"  style="display: none;">	<ul class="list">' +
+	'	<li class="list__item color-3">	<h3 class="list__text">Expansio Docs</h3><button id="letterAnimation" class="control__button control__button--play" aria-label="Trigger animation">	<svg class="control__vector" aria-hidden="true" role="img" viewBox="0 0 60 60">	<use xlink:href="#icon-play"></use>	</svg>	</button>	</li>'+
+	'</ul></section>' +
+	'<div id="intro-text" class="intro-text" style="display:none;"> <h2> W kolejnych krokach pokażemy Ci w jaki sposób od dzisiaj będziesz mógł zarządzac swoimi dokumentami.</h2>' +
+	"<button class='start-tour''>Poznaj Expansio Docs!</button> </div>" +
 	"</div>" +
-	"</div>";
+"</div>";
 
 
 // dispaly welcome page only on first login
 $(document).ready(function () {
-		//localStorage.clear();
-	if (localStorage.ExpansioDocsStorage != 1) {
+	//localStorage.clear();
+	if (localStorage.EDStorage != 1) {
 		$('body').prepend(intro);
-		localStorage.setItem('ExpansioDocsStorage', 1);
+		localStorage.setItem('EDStorage', 1);
 	}
 });
