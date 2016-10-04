@@ -74,9 +74,13 @@
     background-repeat: no-repeat;
 }
 
-#commentsTabView .authorRow>div {
+#commentsTabView .authorRow>.avatar, #commentsTabView .authorRow>.author {
 	display: inline-block;
 	vertical-align: middle;
+	margin-bottom:15px;
+}
+#commentsTabView .comment{
+	display: block;
 }
 
 #commentsTabView .comment .authorRow {
@@ -94,13 +98,13 @@
 }
 
 #commentsTabView .comment .action {
-	opacity: 0;
+	opacity: 0.5;
 	vertical-align: middle;
 	display: inline-block;
 }
 
 #commentsTabView .comment:hover .action {
-	opacity: 0.3;
+	opacity: 0.7;
 }
 
 #commentsTabView .comment .action:hover {
@@ -130,4 +134,309 @@
 
 .app-files .action-comment {
 	padding: 16px 14px;
+}
+
+
+
+@font-face {
+	font-family: 'ecoico';
+	src:url('fonts/timelineicons/ecoico.eot');
+	src:url('fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'),
+	url('fonts/timelineicons/ecoico.woff') format('woff'),
+	url('fonts/timelineicons/ecoico.ttf') format('truetype'),
+	url('fonts/timelineicons/ecoico.svg#ecoico') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} /* Made with http://icomoon.io/ */
+
+.comments {
+	margin: 30px 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+
+/* The line */
+.comments:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10px;
+	background: #4dd0e1;
+	left: 15%;
+}
+
+/* The date/time */
+.comments > li .comment-time {
+	display: block;
+	width: 25%;
+	padding-right: 100px;
+	position: absolute;
+}
+
+.comments > li .comment-time span {
+	display: block;
+	text-align: right;
+}
+
+.comments > li .comment-time span:first-child {
+	font-size: 0.9em;
+	color: #bdd0db;
+}
+
+.comments > li .comment-time span:last-child {
+	font-size: 2.9em;
+	color: #3594cb;
+}
+
+.comments > li:nth-child(odd) .comment-time span:last-child {
+	color: #6cbfee;
+}
+
+/* Right content */
+.comments > li .comment-text {
+	margin: 0 0 15px 25%;
+	background: #4dd0e1;
+	color: #fff;
+	padding: 2em;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+	border-radius: 5px;
+	padding:10px;
+}
+
+.comments > li:nth-child(odd) .comment-text {
+	background: #00bcd4;
+}
+
+.comments > li .comment-text h2 {
+	margin-top: 0px;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+/* The triangle */
+.comments > li .comment-text:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #4dd0e1;
+	border-width: 10px;
+	top: 10px;
+}
+
+.comments > li:nth-child(odd) .comment-text:after {
+	border-right-color: #00bcd4;
+}
+
+/* The icons */
+.comments > li .cbp_tmicon {
+	width: 30px;
+	height: 30px;
+	font-family: 'ecoico';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-size: 1.1em;
+	line-height: 30px;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	color: #fff;
+	background: #00bcd4;
+	border-radius: 50%;
+	box-shadow: 0 0 0 5px #4dd0e1;
+	text-align: center;
+	left: 15%;
+	top: -20px;
+	margin: 0 0 0 -10px;
+	display: none;
+}
+.comments > li:first-of-type .cbp_tmicon {
+	display: block;
+}
+
+.cbp_tmicon-phone:before {
+	content: "\e000";
+}
+
+.cbp_tmicon-screen:before {
+	content: "\e001";
+}
+
+.cbp_tmicon-mail:before {
+	content: "\e002";
+}
+
+.cbp_tmicon-earth:before {
+	content: "\e003";
+}
+
+
+@font-face {
+	font-family: 'fontawesome';
+	src:url('fonts/fontawesome.eot');
+	src:url('fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+	url('fonts/fontawesome.svg#fontawesome') format('svg'),
+	url('fonts/fontawesome.woff') format('woff'),
+	url('fonts/fontawesome.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.icon-drop:before,
+.icon-arrow-left:before {
+	font-family: 'fontawesome';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 2;
+	text-align: center;
+	color: #47a3da;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 8000px;
+	padding-left: 8px;
+}
+
+.container > header nav a:hover:before {
+	color: #fff;
+}
+
+.icon-drop:before {
+	content: "\e000";
+}
+
+.icon-arrow-left:before {
+	content: "\f060";
+}
+
+.comment .comment-date{
+	position: absolute;
+	left:0;
+}
+
+.comment .comment-date .comment-date--date{
+	color: #9a9a9a;
+	font-size:9px;
+	margin: 10px 0 0 0;
+	padding:0;
+}
+
+.comment .comment-date .comment-date--time{
+	color: #00bcd4;
+	font-size:15px;
+	margin:0;
+	padding:0;
+}
+
+.comment .message{
+	font-size:14px;
+}
+
+@media screen and (min-width: 1300px){
+	.comment .comment-date .comment-date--date{
+		font-size:10px;
+	}
+
+	.comment .comment-date .comment-date--time{
+		font-size:18px;
+	}
+
+	.comment .message{
+		font-size:100%;
+	}
+}
+
+@media screen and (min-width: 1600px){
+
+	.comment .comment-date .comment-date--date{
+		margin: 0;
+	}
+}
+
+
+/* Example Media Queries */
+@media screen and (max-width: 65.375em) {
+
+	.comments > li .comment-time span:last-child {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 47.2em) {
+	#commentsTabView .comment{
+		margin-bottom: 60px;
+	}
+
+	.comments:before {
+		display: none;
+	}
+
+	.comments > li .comment-time {
+		width: 100%;
+		position: relative;
+		padding: 0 0 20px 0;
+	}
+
+	.comments > li .comment-time span {
+		text-align: left;
+	}
+
+	.comments > li .comment-text {
+		margin: 0 0 30px 0;
+		padding: 1em;
+		font-weight: 400;
+		font-size: 95%;
+	}
+
+	.comments > li .comment-text:after {
+		right: auto;
+		left: 20px;
+		border-right-color: transparent;
+		border-bottom-color: #4dd0e1;
+		top: -20px;
+	}
+
+	.comments > li:nth-child(odd) .comment-text:after {
+		border-right-color: transparent;
+		border-bottom-color: #00bcd4;
+	}
+
+	.comments > li .cbp_tmicon {
+		position: relative;
+		float: right;
+		left: auto;
+		margin: -55px 5px 0 0px;
+	}
+	.comment .comment-date{
+		top:-35px;
+	}
+	.comments > li:first-of-type .cbp_tmicon {
+		display: none;
+	}
+	.comment .comment-date p{
+		display: inline;
+	}
+	.comment .comment-date .comment-date--date{
+		font-size:12px;
+	}
+
+	.comment .comment-date .comment-date--time{
+		font-size:14px;
+		margin-left:5px;
+	}
+
 }
