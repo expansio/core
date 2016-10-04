@@ -8,15 +8,18 @@
  *
  */
 
-(function() {
+(function () {
 	var TEMPLATE =
 		'	<div class="detailFileInfoContainer">' +
 		'	</div>' +
 		'	{{#if tabHeaders}}' +
 		'	<ul class="tabHeaders">' +
 		'		{{#each tabHeaders}}' +
-		'		<li class="tabHeader" data-tabid="{{tabId}}" data-tabindex="{{tabIndex}}">' +
-		'			<a href="#">{{label}}</a>' +
+		'		<li class="tabHeader " data-tabid="{{tabId}}" data-tabindex="{{tabIndex}}">' +
+		'			<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9b">' +
+		'				<a href="#" class="hi-icon hi-icon-{{label}}">{{label}}</a> ' +
+					'</div>' +
+		'			<a class="tabHeaderLink has-tooltip" title="{{label}}" href="#">{{label}}</a>' +
 		'		</li>' +
 		'		{{/each}}' +
 		'	</ul>' +
@@ -73,7 +76,7 @@
 		/**
 		 * Initialize the details view
 		 */
-		initialize: function() {
+		initialize: function () {
 			this._tabViews = [];
 			this._detailFileInfoViews = [];
 
@@ -83,12 +86,12 @@
 			//this._addTestTabs();
 		},
 
-		_onClose: function(event) {
+		_onClose: function (event) {
 			OC.Apps.hideAppSidebar(this.$el);
 			event.preventDefault();
 		},
 
-		_onClickTab: function(e) {
+		_onClickTab: function (e) {
 			var $target = $(e.target);
 			e.preventDefault();
 			if (!$target.hasClass('tabHeader')) {
@@ -102,12 +105,14 @@
 			this.selectTab(tabId);
 		},
 
-		_addTestTabs: function() {
+		_addTestTabs: function () {
 			for (var j = 0; j < 2; j++) {
 				var testView = new OCA.Files.DetailTabView({id: 'testtab' + j});
 				testView.index = j;
-				testView.getLabel = function() { return 'Test tab ' + this.index; };
-				testView.render = function() {
+				testView.getLabel = function () {
+					return 'Test tab ' + this.index;
+				};
+				testView.render = function () {
 					this.$el.empty();
 					for (var i = 0; i < 100; i++) {
 						this.$el.append('<div>Test tab ' + this.index + ' row ' + i + '</div>');
@@ -117,7 +122,7 @@
 			}
 		},
 
-		template: function(vars) {
+		template: function (vars) {
 			if (!this._template) {
 				this._template = Handlebars.compile(TEMPLATE);
 			}
@@ -127,12 +132,12 @@
 		/**
 		 * Renders this details view
 		 */
-		render: function() {
+		render: function () {
 			var templateVars = {
 				closeLabel: t('files', 'Close')
 			};
 
-			this._tabViews = this._tabViews.sort(function(tabA, tabB) {
+			this._tabViews = this._tabViews.sort(function (tabA, tabB) {
 				var orderA = tabA.order || 0;
 				var orderB = tabB.order || 0;
 				if (orderA === orderB) {
@@ -141,7 +146,7 @@
 				return orderA - orderB;
 			});
 
-			templateVars.tabHeaders = _.map(this._tabViews, function(tabView, i) {
+			templateVars.tabHeaders = _.map(this._tabViews, function (tabView, i) {
 				return {
 					tabId: tabView.id,
 					tabIndex: i,
@@ -154,7 +159,7 @@
 			var $detailsContainer = this.$el.find('.detailFileInfoContainer');
 
 			// render details
-			_.each(this._detailFileInfoViews, function(detailView) {
+			_.each(this._detailFileInfoViews, function (detailView) {
 				$detailsContainer.append(detailView.get$());
 			});
 
@@ -174,12 +179,12 @@
 		 *
 		 * @param {string} tabId tab id
 		 */
-		selectTab: function(tabId) {
+		selectTab: function (tabId) {
 			if (!tabId) {
 				return;
 			}
 
-			var tabView = _.find(this._tabViews, function(tab) {
+			var tabView = _.find(this._tabViews, function (tab) {
 				return tab.id === tabId;
 			});
 
@@ -219,7 +224,7 @@
 		 *
 		 * @param {OCA.Files.FileInfoModel} fileInfo file info to set
 		 */
-		setFileInfo: function(fileInfo) {
+		setFileInfo: function (fileInfo) {
 			this.model = fileInfo;
 
 			if (this._dirty) {
@@ -231,13 +236,13 @@
 			if (this._currentTabId) {
 				// only update current tab, others will be updated on-demand
 				var tabId = this._currentTabId;
-				var tabView = _.find(this._tabViews, function(tab) {
+				var tabView = _.find(this._tabViews, function (tab) {
 					return tab.id === tabId;
 				});
 				tabView.setFileInfo(fileInfo);
 			}
 
-			_.each(this._detailFileInfoViews, function(detailView) {
+			_.each(this._detailFileInfoViews, function (detailView) {
 				detailView.setFileInfo(fileInfo);
 			});
 		},
@@ -245,13 +250,13 @@
 		/**
 		 * Update tab headers based on the current model
 		 */
-		_updateTabVisibilities: function() {
+		_updateTabVisibilities: function () {
 			// update tab header visibilities
 			var self = this;
 			var deselect = false;
 			var countVisible = 0;
 			var $tabHeaders = this.$el.find('.tabHeaders li');
-			_.each(this._tabViews, function(tabView) {
+			_.each(this._tabViews, function (tabView) {
 				var isVisible = tabView.canDisplay(self.model);
 				if (isVisible) {
 					countVisible += 1;
@@ -278,7 +283,7 @@
 		 *
 		 * @return {OCA.Files.FileInfoModel} file info
 		 */
-		getFileInfo: function() {
+		getFileInfo: function () {
 			return this.model;
 		},
 
@@ -287,7 +292,7 @@
 		 *
 		 * @param {OCA.Files.DetailTabView} tab view
 		 */
-		addTabView: function(tabView) {
+		addTabView: function (tabView) {
 			this._tabViews.push(tabView);
 			this._dirty = true;
 		},
@@ -297,11 +302,13 @@
 		 *
 		 * @param {OCA.Files.DetailFileInfoView} detail view
 		 */
-		addDetailView: function(detailView) {
+		addDetailView: function (detailView) {
 			this._detailFileInfoViews.push(detailView);
 			this._dirty = true;
 		}
 	});
 
 	OCA.Files.DetailsView = DetailsView;
+
+
 })();
