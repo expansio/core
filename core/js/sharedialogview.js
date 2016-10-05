@@ -17,7 +17,7 @@
 		'<div class="resharerInfoView subView"></div>' +
 		'{{#if isSharingAllowed}}' +
 		'<label for="shareWith-{{cid}}" class="hidden-visually">{{shareLabel}}</label>' +
-		'<div class="oneline">' +
+		'<div class="oneline ac-custom ac-checkbox ac-boxfill">' +
 		'    <input id="shareWith-{{cid}}" class="shareWithField" type="text" placeholder="{{sharePlaceholder}}" />' +
 		'    <span class="shareWithLoading icon-loading-small hidden"></span>'+
 		'{{{remoteShareInfo}}}' +

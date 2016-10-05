@@ -659,12 +659,15 @@ em {
 /* generic tab styles */
 .tabHeaders {
 	margin: 15px;
+	text-align: center;
 }
 .tabHeaders .tabHeader {
-	float: left;
+	/*float: left;*/
 	padding: 5px;
 	cursor: pointer;
+	display: inline-block;
 }
+
 .tabHeaders .tabHeader, .tabHeaders .tabHeader a {
 	color: #888;
 }
@@ -685,7 +688,7 @@ em {
 	clear: left;
 }
 .tabsContainer .tab {
-	padding: 15px;
+	padding: 5px 15px 15px 15px;
 }
 
 /* popover menu styles (use together with "bubble" class) */

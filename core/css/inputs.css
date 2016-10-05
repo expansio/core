@@ -87,12 +87,13 @@ input[type="checkbox"].checkbox {
 input[type="checkbox"].checkbox + label:before {
 	content: "";
 	display: inline-block;
-
 	height: 20px;
 	width: 20px;
 	vertical-align: middle;
-
-	background: url('../img/actions/checkbox.svg') left top no-repeat;
+	background-image: url('../img/actions/checkbox.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 15px 15px;
 	opacity: 0.7;
 }
 
@@ -102,7 +103,7 @@ input[type="checkbox"].checkbox.u-left +label:before { float: left; }
 input[type="checkbox"].checkbox.u-hidden + label:before { display: none; }
 
 input[type="checkbox"].checkbox:checked + label:before {
-	background-image: url('../img/actions/checkbox-checked.svg');
+	background-image: url('../img/actions/checked.png');
 }
 
 input[type="checkbox"].checkbox:indeterminate + label:before {
@@ -312,3 +313,19 @@ input:disabled+label, input:disabled:hover+label, input:disabled:focus+label {
 	background-color: #1d2d44;
 	color: #bbb;
 }
+
+
+.newCommentForm input[type="submit"]{
+	background-color: rgb(195,233,9);
+	color:white;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.newCommentForm input[type="submit"]:hover{
+	background-color: #a6c341;
+}
+

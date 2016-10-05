@@ -6567,9 +6567,9 @@ button.close {
     background-color: transparent;
     border: 0
 }
-.hidden {
-    display: none!important
-}
+/*.hidden {*/
+    /*display: none!important*/
+/*}*/
 .affix {
     position: fixed
 }

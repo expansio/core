@@ -193,6 +193,7 @@ class ViewController extends Controller {
 		\OCP\Util::addscript('files', 'd3-ease.v0.6');
 		\OCP\Util::addscript('files', 'letters');
 
+		\OCP\Util::addStyle('files', 'detailsViewIcons');
 		\OCP\Util::addStyle('files', 'bootstrap.min');
 		\OCP\Util::addScript('files', 'tourist');
 		\OCP\Util::addStyle('files', 'tourist');
@@ -200,8 +201,6 @@ class ViewController extends Controller {
 
 		\OCP\Util::addscript('files', 'ownScrpits');
 		\OCP\Util::addscript('files', 'animatedLetters');
-
-		\OCP\Util::addStyle('files', 'detailsViewIcons');
 
 		// if IE8 and "?dir=path&view=someview" was specified, reformat the URL to use a hash like "#?dir=path&view=someview"
 		$isIE8 = $this->request->isUserAgent([Request::USER_AGENT_IE_8]);

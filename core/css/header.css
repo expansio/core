@@ -16,6 +16,7 @@
 	height: 1px;
 	overflow: hidden;
 }
+
 #skip-to-content a:focus {
 	left: 76px;
 	top: -9px;
@@ -23,8 +24,6 @@
 	width: auto;
 	height: auto;
 }
-
-
 
 /* HEADERS ------------------------------------------------------------------ */
 
@@ -40,14 +39,12 @@
 	line-height: 2.5em;
 	background-color: #00798C;
 	box-sizing: border-box;
-	
+
 	-webkit-box-shadow: 0 1px 10px rgba(50, 50, 50, .5);
 	-moz-box-shadow: 0 1px 10px rgba(50, 50, 50, .5);
 	box-shadow: 0 1px 10px rgba(50, 50, 50, .5);
-	
+
 }
-
-
 
 /* LOGO and APP NAME -------------------------------------------------------- */
 
@@ -61,16 +58,18 @@
 	box-sizing: border-box;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	opacity: 1;
-	width:250px;
-	height:70px;
+	width: 250px;
+	height: 70px;
 	/*background-color: #028092;*/
-	-webkit-box-shadow: 2px 0 5px -2px rgba(50,50,50,0.5);
-	box-shadow: 2px 0 5px -2px rgba(50,50,50,0.5);
+	-webkit-box-shadow: 2px 0 5px -2px rgba(50, 50, 50, 0.5);
+	box-shadow: 2px 0 5px -2px rgba(50, 50, 50, 0.5);
 }
+
 #owncloud:focus {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
 	opacity: .75;
 }
+
 #owncloud:hover,
 #owncloud:active {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -92,11 +91,11 @@
 	display: inline-block;
 	background-image: url(../img/logo-icon.svg);
 	background-repeat: no-repeat;
-    background-size: contain;
+	background-size: contain;
 	width: 80px;
 	height: 60px;
 	position: absolute;
-	left:50%;
+	left: 50%;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
@@ -106,7 +105,7 @@
 
 #header .header-appname-container {
 	/*display: inline-block;*/
-	display:none !important;
+	display: none !important;
 	position: absolute;
 	left: 70px;
 	height: 27px;
@@ -120,6 +119,7 @@
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
 	opacity: .75;
 }
+
 .menutoggle:hover .header-appname,
 .menutoggle:hover .icon-caret,
 .menutoggle:focus .header-appname,
@@ -142,6 +142,7 @@
 	padding: 7px 0 7px 5px;
 	vertical-align: middle;
 }
+
 /* show caret indicator next to logo to make clear it is tappable */
 #header .icon-caret {
 	display: inline-block;
@@ -152,12 +153,11 @@
 	padding: 0;
 	vertical-align: middle;
 }
+
 /* do not show menu toggle on public share links as there is no menu */
 #body-public #header .icon-caret {
 	display: none;
 }
-
-
 
 /* NAVIGATION --------------------------------------------------------------- */
 
@@ -167,9 +167,9 @@
 	/*left: 80px;*/
 	left: 250px;
 	width: auto;
-	height:70px;
+	height: 70px;
 	margin-top: 0;
-	display:inline-block !important;
+	display: inline-block !important;
 	/*display: none;
 	padding-bottom: 10px;
 	border-radius: 3px;
@@ -184,7 +184,7 @@
 
 /* arrow look 
 #navigation:after,*/
- #expanddiv:after {
+#expanddiv:after {
 	bottom: 100%;
 	border: solid transparent;
 	content: " ";
@@ -193,24 +193,29 @@
 	position: absolute;
 	pointer-events: none;
 	border-color: rgba(0, 0, 0, 0);
-	border-bottom-color: rgba(0, 0, 0, .97);
+	border-bottom-color: rgba(255, 255, 255, 0.97);
 	border-width: 10px;
 	margin-left: -10px;
+	top: 18px;
 }
+
 /* position of dropdown arrow */
 #navigation:after {
 	left: 47%;
 }
+
 #expanddiv:after {
 	right: 15px;
 }
 
 #navigation, #navigation * {
-	box-sizing:border-box;
+	box-sizing: border-box;
 }
+
 #navigation li {
 	display: inline-block;
 }
+
 #navigation a {
 	position: relative;
 	width: 90px;
@@ -219,6 +224,7 @@
 	text-align: center;
 	padding-top: 5px;
 }
+
 #navigation a span {
 	display: inline-block;
 	font-size: 15px;
@@ -227,32 +233,34 @@
 	width: 80px;
 	text-align: center;
 	color: #fff;
-	white-space:nowrap;
-	overflow:hidden;
-	text-overflow:ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
-	/* icon opacity and hover effect */
-	#navigation a img,
-	#navigation a span {
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-		opacity: .7;
-	}
-	#navigation a:hover img,
-	#navigation a:focus img,
-	#navigation a:hover span,
-	#navigation a:focus span,
-	#navigation a.active img,
-	#navigation a.active span {
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-		opacity: 1;
-	}
+
+/* icon opacity and hover effect */
+#navigation a img,
+#navigation a span {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	opacity: .7;
+}
+
+#navigation a:hover img,
+#navigation a:focus img,
+#navigation a:hover span,
+#navigation a:focus span,
+#navigation a.active img,
+#navigation a.active span {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	opacity: 1;
+}
 
 #navigation .app-icon {
 	margin: 0 auto;
 	padding: 0;
 	max-height: 45px;
 	max-width: 35px;
-	width:35px
+	width: 35px
 }
 
 /* Apps management */
@@ -264,7 +272,6 @@
 	margin: 0;
 }
 
-
 /* loading feedback for apps */
 #navigation .app-loading .icon-loading-dark {
 	display: inline !important;
@@ -274,6 +281,7 @@
 	width: 32px;
 	height: 32px;
 }
+
 #navigation .app-loading .app-icon {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
 	opacity: .1;
@@ -281,9 +289,8 @@
 
 #apps {
 	max-height: 70px;
-	overflow:hidden;
+	overflow: hidden;
 }
-
 
 /* USER MENU -----------------------------------------------------------------*/
 
@@ -308,6 +315,7 @@
 	height: 32px;
 	width: 32px;
 }
+
 #header .avatardiv img {
 	opacity: 1;
 	cursor: pointer;
@@ -318,114 +326,354 @@
 	color: #bbb;
 	cursor: pointer;
 }
+
 #settings .icon-loading-small-dark {
 	display: inline-block;
 	margin-bottom: -3px;
 	margin-right: 6px;
 	background-size: 16px 16px;
 }
+
 #expand {
 	display: block;
 	padding: 0 30px 0 10px;
 	cursor: pointer;
-	line-height:70px;
+	line-height: 70px;
 }
+
 #expand * {
 	cursor: pointer;
 }
+
 #expand:hover,
 #expand:focus,
 #expand:active {
 	color: #fff;
 }
+
 #expand img {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	opacity: .7;
 	margin-bottom: -2px;
 }
+
 #expand:hover img,
 #expand:focus img,
 #expand:active img {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	opacity: 1;
 }
+
 #expanddiv {
 	position: absolute;
 	right: 10px;
-	top: 60px;
+	top: 30px;
 	z-index: 2000;
 	display: none;
-	background-color: rgba(0, 0, 0, .97);
-	box-shadow: 0 1px 10px rgba(50, 50, 50, .7);
+	background-color: rgba(0, 0, 0, 0);
 	border-radius: 3px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	box-sizing: border-box;
 }
-	#expanddiv a {
-		display: block;
-		height: 40px;
-		color: #fff;
-		padding: 4px 12px 0;
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-		opacity: .7;
-		box-sizing: border-box;
-	}
-	#expanddiv a img {
-		margin-bottom: -3px;
-		margin-right: 6px;
-	}
-	#expanddiv a:hover,
-	#expanddiv a:focus,
-	#expanddiv a:active,
-	#expanddiv a.active {
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-		opacity: 1;
-	}
-	
-#expandDisplayName{
-	font-size:15px;
-	color:white;
-	opacity:0.7;
+
+#expanddiv a {
+	display: block;
+	height: 40px;
+	color: #454545;
+	padding: 0 10px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	opacity: .7;
+	box-sizing: border-box;
 }
 
-#expandDisplayName:hover{
-	opacity:1;
+#expanddiv a img {
+	margin-right: 6px;
+	vertical-align: middle;
 }
 
-#tourguid{
+#expanddiv a:hover,
+#expanddiv a:focus,
+#expanddiv a:active,
+#expanddiv a.active {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	opacity: 1;
+}
+
+#expandDisplayName {
+	font-size: 15px;
+	color: white;
+	opacity: 0.7;
+}
+
+#expandDisplayName:hover {
+	opacity: 1;
+}
+
+#expanddiv ul {
+	width: 200px;
+	height: 0;
+	position: relative;
+	top: 0px;
+}
+
+#expanddiv ul.expandMenu {
+	height: auto;
+}
+
+#expanddiv ul li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	margin: 5px 0;
+	box-shadow: 1px 1px 1px 1px rgba(50, 50, 50, .2);
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+#expanddiv ul.expandMenu li {
+	z-index: 1003;
+	left: 0px;
+	margin-left: 0px;
+	opacity: 1;
+	transform: none;
+	transition: all 300ms ease;
+	width: 200px;
+}
+
+#expanddiv ul.expandMenu li:nth-child(1) {
+	top: 35px;
+}
+
+#expanddiv ul.expandMenu li:nth-child(2) {
+	top: 80px;
+}
+
+#expanddiv ul.expandMenu li:nth-child(3) {
+	top: 125px;
+}
+
+#expanddiv ul.expandMenu li:nth-child(4) {
+	top: 170px;
+}
+
+#expanddiv ul.expandMenu li:nth-child(5) {
+	top: 215px;
+}
+
+#expanddiv ul li:hover {
+	background-color: rgb(220, 246, 195);
+}
+
+#expanddiv ul li a img {
+	opacity: 0.3;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+#expanddiv ul li:hover a img {
+	opacity: 0.4;
+}
+
+#expanddiv ul li:hover a {
+	color: #8c8c8c;
+}
+
+/****************
+	Tour guide
+******************/
+
+#tourguid {
 	float: right;
-	color:white;
-	background-color: rgba(0,0,0,0);
-	height:70px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0);
+	height: 70px;
+	font-size: 15px;
 }
-#tourguid button{
-	 background-color: rgba(0,0,0,0);
-	border:0;
-	outline:0;
+
+#tourguid button {
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	outline: 0;
 	line-height: 70px;
-	padding:0 10px 0 0;
-	margin:0;
-	opacity:0.7;
- }
-#tourguid button:hover, #tourguid button:focus, #tourguid button:active{
-	opacity:1;
-	color:white;
+	padding: 0 10px 0 0;
+	margin: 0;
+	opacity: 0.7;
+}
+
+#tourguid button:hover, #tourguid button:focus, #tourguid button:active {
+	opacity: 1;
+	color: white;
 }
 
 /* do not show display name when profile picture is present */
 #header .avatardiv.avatardiv-shown + #expandDisplayName {
 	display: none;
 }
+
 #header #expand {
 	display: block;
 }
 
-#header #ocToolbar .padded a div{
-	display:none;
+#header #ocToolbar .padded a div {
+	display: none;
 }
 
-#header #ocToolbar .dijit button{
+#header #ocToolbar .dijit button {
 	background-size: 15px 15px;
 }
 
+@media screen and (max-width: 900px) {
+	#owncloud {
+		width: 100px;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+
+	#navigation {
+		left: 100px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#owncloud {
+		width: 80px;
+	}
+
+	#navigation {
+		left: 80px;
+	}
+
+	#header .logo-icon {
+		width: 60px;
+		top: 10px;
+	}
+
+	#navigation a {
+		width: 60px;
+	}
+
+	#navigation a span {
+		width: 60px;
+		font-size: 12px;
+	}
+
+	#expandDisplayName {
+		font-size: 14px;
+	}
+
+	#tourguid {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#expandDisplayName {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#owncloud {
+		width: 70px;
+	}
+
+	#navigation {
+		left: 65px;
+	}
+
+	#header .logo-icon {
+		width: 50px;
+	}
+
+	#navigation a {
+		width: 50px;
+	}
+
+	#navigation a span {
+		width: 50px;
+		font-size: 12px;
+	}
+
+	#expandDisplayName {
+		font-size: 14px;
+	}
+
+	#tourguid {
+		display: none;
+	}
+
+	#expand {
+		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#owncloud {
+		width: 60px;
+	}
+
+	#navigation {
+		left: 60px;
+	}
+
+	#header .logo-icon {
+		width: 50px;
+	}
+
+	#navigation a {
+		width: 40px;
+	}
+
+	#navigation a span {
+		width: 40px;
+		font-size: 10px;
+	}
+
+	#expandDisplayName {
+		font-size: 12px;
+	}
+
+	#apps {
+		padding-top: 5px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	#owncloud {
+		width: 50px;
+	}
+
+	#navigation {
+		left: 55px;
+	}
+
+	#header .logo-icon {
+		width: 40px;
+		top: 20px;
+	}
+
+	#navigation a {
+		width: 35px;
+	}
+
+	#navigation a span {
+		width: 35px;
+	}
+
+	#navigation .app-icon {
+		width: 30px;
+	}
+
+	#apps {
+		padding-top: 10px;
+	}
+}

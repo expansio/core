@@ -10,10 +10,11 @@
 
 #commentsTabView .newCommentForm {
 	margin-bottom: 20px;
+	text-align: right;
 }
 
 #commentsTabView .newCommentForm .message {
-	width: 90%;
+	width:100%;
 	resize: vertical;
 }
 
@@ -77,7 +78,7 @@
 #commentsTabView .authorRow>.avatar, #commentsTabView .authorRow>.author {
 	display: inline-block;
 	vertical-align: middle;
-	margin-bottom:15px;
+	margin-bottom:10px;
 }
 #commentsTabView .comment{
 	display: block;
@@ -356,7 +357,7 @@
 	}
 
 	.comment .message{
-		font-size:100%;
+		font-size:90%;
 	}
 }
 
@@ -364,6 +365,15 @@
 
 	.comment .comment-date .comment-date--date{
 		margin: 0;
+	}
+}
+
+@media screen and (min-width: 1700px){
+	.comment .message{
+		font-size:100%;
+	}
+	#commentsTabView .authorRow>.avatar, #commentsTabView .authorRow>.author {
+		margin-bottom:15px;
 	}
 }
 
