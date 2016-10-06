@@ -248,6 +248,10 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 	background-image: url('../img/actions/rename.png');
 }
 
+.expandMenu .icon-rename {
+	background-image: url('../img/actions/rename - black.svg');
+}
+
 .icon-search {
 	background-image: url('../img/actions/search.svg');
 }

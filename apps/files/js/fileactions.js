@@ -348,11 +348,13 @@
 			var $trigger = context.$file.closest('tr').find('.fileactions .action-menu');
 			$trigger.addClass('open');
 
+
 			menu = new OCA.Files.FileActionsMenu();
 
 			context.$file.find('td.filename').append(menu.$el);
 
 			menu.$el.on('afterHide', function() {
+				context.$file.find('td.filename .fileActionsMenu ul').removeClass('expandMenu');
 				context.$file.removeClass('mouseOver');
 				$trigger.removeClass('open');
 				menu.remove();
@@ -360,6 +362,9 @@
 
 			context.$file.addClass('mouseOver');
 			menu.show(context);
+			$('.fileActionsMenu ul').addClass('expandMenu');
+
+
 		},
 
 		/**
@@ -403,6 +408,7 @@
 					a: null
 				},
 				function(event) {
+
 					event.stopPropagation();
 					event.preventDefault();
 
@@ -438,6 +444,8 @@
 						fileName,
 						callContext
 					);
+
+					$('.fileActionsMenu ul').addClass('expandMenu');
 				}
 			);
 			$actionEl.tooltip({placement:'top'});
@@ -765,3 +773,8 @@
 	};
 })();
 
+$(document).ready(function () {
+	$('td.filename').on('click', '.expandMenu li', function () {
+		$(this).find('a').click();
+	});
+});

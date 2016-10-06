@@ -364,6 +364,7 @@
 	opacity: 1;
 }
 
+.fileActionsMenu,
 #expanddiv {
 	position: absolute;
 	right: 10px;
@@ -410,6 +411,7 @@
 	opacity: 1;
 }
 
+.fileActionsMenu ul,
 #expanddiv ul {
 	width: 200px;
 	height: 0;
@@ -417,10 +419,16 @@
 	top: 0px;
 }
 
+.fileActionsMenu ul{
+	top:15px
+}
+
+.fileActionsMenu ul.expandMenu,
 #expanddiv ul.expandMenu {
 	height: auto;
 }
 
+.fileActionsMenu ul li,
 #expanddiv ul li {
 	position: absolute;
 	top: 0;
@@ -433,8 +441,10 @@
 	-ms-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
+	cursor: pointer;
 }
 
+.fileActionsMenu ul.expandMenu li,
 #expanddiv ul.expandMenu li {
 	z-index: 1003;
 	left: 0px;
@@ -464,11 +474,37 @@
 #expanddiv ul.expandMenu li:nth-child(5) {
 	top: 215px;
 }
+.fileActionsMenu ul.expandMenu li{
+	margin:0;
+}
 
+.fileActionsMenu ul.expandMenu li:nth-child(1) {
+	top: 0;
+}
+
+.fileActionsMenu ul.expandMenu li:nth-child(2) {
+	top: 45px;
+}
+
+.fileActionsMenu ul.expandMenu li:nth-child(3) {
+	top: 90px;
+}
+
+.fileActionsMenu ul.expandMenu li:nth-child(4){
+	top: 135px;
+}
+
+.fileActionsMenu ul.expandMenu li:nth-child(5) {
+	top: 180px;
+}
+
+
+.fileActionsMenu ul li:hover,
 #expanddiv ul li:hover {
 	background-color: rgb(220, 246, 195);
 }
 
+.fileActionsMenu ul li a img,
 #expanddiv ul li a img {
 	opacity: 0.3;
 	-webkit-transition: all 0.3s linear;
@@ -478,12 +514,24 @@
 	transition: all 0.2s linear;
 }
 
+.fileActionsMenu ul li:hover a img,
 #expanddiv ul li:hover a img {
 	opacity: 0.4;
 }
 
+.fileActionsMenu ul li:hover a,
 #expanddiv ul li:hover a {
 	color: #8c8c8c;
+}
+
+#fileList .fileActionsMenu ul li a.action{
+	margin:0 ;
+	padding:0 0 0 20px;
+	display: block;
+	width:200px;
+	height:30px;
+	line-height: 30px;
+
 }
 
 /****************

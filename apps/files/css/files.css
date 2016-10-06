@@ -548,6 +548,7 @@ html.ie8 #fileList tr.selected td.filename>.selectCheckBox {
 .bubble:after,
 #app-navigation .app-navigation-entry-menu:after {
 	right: 6px;
+	top:-5px;
 }
 .bubble:before,
 #app-navigation .app-navigation-entry-menu:before {
@@ -668,6 +669,7 @@ html.ie8 .column-mtime .selectedActions {
 
 #fileList .popovermenu {
 	margin-right: -5px;
+	height:0;
 }
 .ie8 #fileList .popovermenu {
 	margin-top: -10px;
