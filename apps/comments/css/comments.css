@@ -16,6 +16,11 @@
 #commentsTabView .newCommentForm .message {
 	width:100%;
 	resize: vertical;
+	border: 3px solid rgb(77,208,225);
+	background-color: rgba(0,0,0,0);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
 }
 
 #commentsTabView .newCommentForm .submitLoading {

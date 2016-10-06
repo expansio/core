@@ -91,6 +91,23 @@
 .shareTabView label {
 	font-weight:400;
 	white-space: nowrap;
+	font-size: 17px;
+	font-weight:300;
+}
+.shareTabView #allowPublicUploadWrapper{
+	margin-bottom:10px;
+}
+.shareTabView .expirationView{
+	margin-top:10px;
+}
+
+.shareTabView label::before{
+	margin-right:10px;
+}
+
+.shareTabView input{
+	background-color: rgba(0,0,0,0);
+	border: 2px solid rgb(77,208,225);
 }
 
 .shareTabView input[type="checkbox"] {

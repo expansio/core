@@ -2,7 +2,12 @@
 	min-height: 100px;
 }
 
-.shareTabView .oneline { white-space: nowrap; }
+.shareTabView .oneline {
+	white-space: nowrap;
+}
+.shareTabView .oneline, .shareTabView .linkPass, .shareTabView .expirationDateContainer {
+	margin: 15px 0;
+}
 
 .shareTabView .shareWithLoading {
 	padding-left: 10px;
@@ -29,10 +34,11 @@
 	width: 94%;
 	margin-left: 0;
 }
+
 .shareTabView input[type="text"].shareWithField,
 .shareTabView input[type="text"].emailField,
 .shareTabView input[type="text"].linkText {
-	width: 80%;
+	width: 90%;
 }
 
 .shareTabView form {
@@ -54,14 +60,15 @@
 }
 
 #shareWithList .unshare img, #shareWithList .showCruds img {
-	vertical-align:text-bottom; /* properly align icons */
+	vertical-align: text-bottom; /* properly align icons */
 }
 
-#shareWithList label input[type=checkbox]{
+#shareWithList label input[type=checkbox] {
 	margin-left: 0;
 	position: relative;
 }
-#shareWithList .username{
+
+#shareWithList .username {
 	padding-right: 8px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -70,7 +77,8 @@
 	overflow: hidden;
 	vertical-align: middle;
 }
-#shareWithList li label{
+
+#shareWithList li label {
 	margin-right: 8px;
 }
 
@@ -92,5 +100,6 @@
 
 .shareTabView .icon {
 	display: inline-block;
-	background-size: 16px 16px;
+	background-size: 20px 20px;
+	vertical-align: middle;
 }

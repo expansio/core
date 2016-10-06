@@ -103,6 +103,7 @@
 	}
 }
 
+
 @media screen and (min-width: 1700px){
 
 	.hi-icon:before {
@@ -113,6 +114,13 @@
 	.tabHeaders .tabHeader .hi-icon {
 		width: 60px;
 		height: 60px;
+	}
+
+	.tabHeaders .tabHeader a.tabHeaderLink{
+		font-size:13px;
+	}
+	.tabHeaders .tabHeader{
+		width:25%;
 	}
 }
 
