@@ -31,6 +31,17 @@ body {
 	background-size: cover;
 }
 
+
+.app-files #app-content
+{
+	background-image: url('../img/background-app.jpg');
+}
+
+.app-settings #app-content {
+	background-image: url('../img/background-app-opacity.jpg');
+}
+
+
 .two-factor-provider {
 	text-align: center;
 	width: 100%;

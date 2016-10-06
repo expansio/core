@@ -5,6 +5,7 @@
 .shareTabView .oneline {
 	white-space: nowrap;
 }
+
 .shareTabView .oneline, .shareTabView .linkPass, .shareTabView .expirationDateContainer {
 	margin: 15px 0;
 }
@@ -102,4 +103,81 @@
 	display: inline-block;
 	background-size: 20px 20px;
 	vertical-align: middle;
+}
+
+.linkShareView input, .shareWithField, .datepicker{
+	border:0 !important;
+	border-radius: 0 !important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	box-shadow: 0 0 0 0.5em rgba(255, 255, 255, 0);
+}
+
+
+.linkShareView input:active, .linkShareView input:focus, .shareWithField:focus,.shareWithField:active, .datepicker:focus, .datepicker:active {
+	-webkit-animation: popping-border 0.35s ease-out;
+	-moz-animation: popping-border 0.35s ease-out;
+	animation: popping-border 0.35s ease-out;
+	-webkit-transition: all 0.35s ease-out, box-shadow 0.35s ease 0.35s;
+	-moz-transition: all 0.35s ease-out, box-shadow 0.35s ease 0.35s;
+	transition: all 0.35s ease-out, box-shadow 0.35s ease 0.35s;
+
+	-webkit-box-shadow: 0px 0px 2px 4px rgba(0,121,140 ,.5);
+	-moz-box-shadow: 0px 0px 2px 4px rgba(0,121,140 ,.5);
+	box-shadow: 0px 0px 2px 4px rgba(0,121,140 ,.5);
+}
+
+
+@-webkit-keyframes popping-border {
+	0% {
+		-webkit-transform: scale(1);
+	}
+	66% {
+		-webkit-transform: scale(0.95);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		-webkit-box-shadow: 0px 0px 2px 4px rgba(0,121,140 ,.5);
+	}
+}
+@-moz-keyframes popping-border {
+	0% {
+		-moz-transform: scale(1);
+	}
+	66% {
+		-moz-transform: scale(0.95);
+	}
+	100% {
+		-moz-transform: scale(1);
+		-moz-box-shadow: 0px 0px 2px 4px rgba(0,121,140 ,.5);
+	}
+}
+@keyframes popping-border {
+	0% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+	66% {
+		-webkit-transform: scale(0.95);
+		-moz-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		-o-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+		-webkit-box-shadow: 0px 0px 2px 4px rgba(0,121,140 ,.5);
+		-moz-box-shadow: 0px 0px 2px 4px rgba(0,121,140 ,.5);
+		box-shadow: 0px 0px 2px 4px rgba(0,121,140 ,.5);
+	}
 }

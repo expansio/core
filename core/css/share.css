@@ -107,7 +107,7 @@
 
 .shareTabView input{
 	background-color: rgba(0,0,0,0);
-	border: 2px solid rgb(77,208,225);
+	outline: 2px solid rgb(77,208,225);
 }
 
 .shareTabView input[type="checkbox"] {

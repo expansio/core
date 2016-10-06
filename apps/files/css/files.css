@@ -71,8 +71,6 @@
 	overflow-x: hidden;
 	-webkit-transition: margin-right 0.3s;
 	transition: margin-right 0.3s;
-
-	background-image: url('../img/background.jpg');
 }
 
 /* icons for sidebar */

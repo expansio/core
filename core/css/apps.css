@@ -493,7 +493,7 @@ a:hover, a:focus, a:active{
 	width: 27%;
 	min-width: 300px;
 	display: block;
-	background: rgba(199, 244, 101, 0.15);
+	background: rgba(214,235,252,0.3);
 	border-left: 1px solid #eee;
 	overflow-x: hidden;
 	overflow-y: auto;
