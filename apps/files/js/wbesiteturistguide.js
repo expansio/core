@@ -35,17 +35,17 @@ $(window).load(function () {
 
 		}, {
 			//click on file
-			content: '<p>Kliknij na podświetlony plik, żeby zobaczyć szczegóły.</p>',
+			content: '<p>Kliknij na dowolny plik, żeby zobaczyć szczegóły.</p>',
 			highlightTarget: true,
-			target: $('#fileList tr[data-type="file"]:first'),
-			my: 'top center',
-			at: 'bottom center',
+			target: $('#fileList'),
+			my: 'bottom center',
+			at: 'top center',
 			bind: ['onClick'],
 			setup: function (tour, options) {
-				$('#fileList tr[data-type="file"]:first').on('click', this.onClick);
+				$('#fileList tr').on('click', this.onClick);
 			},
 			teardown: function (tour, options) {
-				$('#fileList tr[data-type="file"]:first').off('click', this.onClick);
+				$('#fileList tr').off('click', this.onClick);
 			},
 			onClick: function (tour) {
 				tour.next();
@@ -187,9 +187,7 @@ $(window).load(function () {
 		$('body').remove('#intro');
 	});
 
-
 	$('#intro .intro-content .content').fadeIn(200);
-
 	$('#letterAnimation').click();
 	$('#intro-text').delay(2000).fadeIn(2000);
 });

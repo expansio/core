@@ -299,7 +299,7 @@
       var at, my;
       my = step.my || 'left center';
       at = step.at || 'right center';
-      this.tip.setContainer(step.container || $('body'));
+      this.tip.setContainer(step.container || $('body '));
       this.tip.setContent(contentElement);
       return this.tip.setPosition(step.target || false, my, at);
     };
