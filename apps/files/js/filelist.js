@@ -11,6 +11,7 @@
 (function() {
 
 	var TEMPLATE_ADDBUTTON = '<a href="#" class="button new">' +
+		'<span class="text">'+t('files','Add file or folder')+'</span>' +
 		'<span class="icon {{iconClass}}"></span>' +
 		'<span class="hidden-visually">{{addText}}</span>' +
 		'</a>';
@@ -2879,6 +2880,7 @@
 			}
 			this._newFileMenu.showAt($target);
 
+			$('.newFileMenu ul').addClass('expandMenu');
 			return false;
 		},
 

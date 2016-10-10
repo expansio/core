@@ -364,7 +364,7 @@
 	opacity: 1;
 }
 
-.fileActionsMenu,
+.fileActionsMenu, .newFileMenu,
 #expanddiv {
 	position: absolute;
 	right: 10px;
@@ -411,7 +411,7 @@
 	opacity: 1;
 }
 
-.fileActionsMenu ul,
+.fileActionsMenu ul, .newFileMenu ul,
 #expanddiv ul {
 	width: 200px;
 	height: 0;
@@ -419,16 +419,16 @@
 	top: 0px;
 }
 
-.fileActionsMenu ul{
+.fileActionsMenu ul . .newFileMenu ul{
 	top:15px
 }
 
-.fileActionsMenu ul.expandMenu,
+.fileActionsMenu ul.expandMenu, .newFileMenu ul.expandMenu,
 #expanddiv ul.expandMenu {
 	height: auto;
 }
 
-.fileActionsMenu ul li,
+.fileActionsMenu ul li, .newFileMenu ul li,
 #expanddiv ul li {
 	position: absolute;
 	top: 0;
@@ -444,7 +444,11 @@
 	cursor: pointer;
 }
 
-.fileActionsMenu ul.expandMenu li,
+.newFileMenu ul li label, .newFileMenu ul li a{
+	padding-left: 15px !important;
+}
+
+.fileActionsMenu ul.expandMenu li, .newFileMenu ul.expandMenu li,
 #expanddiv ul.expandMenu li {
 	z-index: 1003;
 	left: 0px;
@@ -454,12 +458,15 @@
 	transition: all 300ms ease;
 	width: 200px;
 }
+.newFileMenu ul.expandMenu li{
+	width:170px;
+}
 
-#expanddiv ul.expandMenu li:nth-child(1) {
+#expanddiv ul.expandMenu li:nth-child(1){
 	top: 35px;
 }
 
-#expanddiv ul.expandMenu li:nth-child(2) {
+#expanddiv ul.expandMenu li:nth-child(2){
 	top: 80px;
 }
 
@@ -482,7 +489,7 @@
 	top: 0;
 }
 
-.fileActionsMenu ul.expandMenu li:nth-child(2) {
+.fileActionsMenu ul.expandMenu li:nth-child(2){
 	top: 45px;
 }
 
@@ -498,13 +505,20 @@
 	top: 180px;
 }
 
+.newFileMenu  ul.expandMenu li:nth-child(1) {
+	top:10px;
+}
 
-.fileActionsMenu ul li:hover,
+.newFileMenu  ul.expandMenu li:nth-child(2) {
+	top:55px;
+}
+
+.fileActionsMenu ul li:hover, .newFileMenu  ul li:hover,
 #expanddiv ul li:hover {
 	background-color: rgb(220, 246, 195);
 }
 
-.fileActionsMenu ul li a img,
+.fileActionsMenu ul li a img, .newFileMenu ul li a img,
 #expanddiv ul li a img {
 	opacity: 0.3;
 	-webkit-transition: all 0.3s linear;
@@ -514,12 +528,12 @@
 	transition: all 0.2s linear;
 }
 
-.fileActionsMenu ul li:hover a img,
+.fileActionsMenu ul li:hover a img,  .newFileMenu ul li:hover a img,
 #expanddiv ul li:hover a img {
 	opacity: 0.4;
 }
 
-.fileActionsMenu ul li:hover a,
+.fileActionsMenu ul li:hover a, .newFileMenu ul li:hover a,
 #expanddiv ul li:hover a {
 	color: #8c8c8c;
 }

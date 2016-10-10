@@ -777,4 +777,10 @@ $(document).ready(function () {
 	$('td.filename').on('click', '.expandMenu li', function () {
 		$(this).find('a').click();
 	});
+
+
+});
+$(window).load(function () {
+	var translate =t('files','share');
+	$('.fileactions .action-share span:nth-child(3)').html(translate);
 });
