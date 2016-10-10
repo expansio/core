@@ -161,7 +161,7 @@
 	content: "\e006";
 }
 
-.hi-icon-refresh:before , .hi-icon-Wersje:before  {
+.hi-icon-refresh:before , .tabHeaders .tabHeader:nth-child(3) .hi-icon:before  {
 	content: "\e007";
 }
 
@@ -173,7 +173,7 @@
 	content: "\e00b";
 }
 
-.hi-icon-link:before, .hi-icon-Udostępnianie:before {
+.hi-icon-link:before , .tabHeaders .tabHeader:nth-child(2) .hi-icon:before {
 	content: "\e00c";
 }
 
@@ -189,7 +189,7 @@
 	content: "\e00f";
 }
 
-.hi-icon-chat:before , .hi-icon-Komentarze:before{
+.hi-icon-chat:before , .tabHeaders .tabHeader:nth-child(1) .hi-icon:before{
 	content: "\e010";
 }
 

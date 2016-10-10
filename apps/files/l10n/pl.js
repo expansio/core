@@ -90,7 +90,7 @@ OC.L10N.register(
     "Folder" : "Folder",
     "New folder" : "Nowy folder",
     "{newname} already exists" : "{newname} już istnieje",
-    "Upload" : "Wyślij",
+    "Upload" : "Plik",
     "An error occurred while trying to update the tags" : "Wystąpił błąd podczas aktualizacji tagów",
     "A new file or folder has been <strong>created</strong>" : "Nowy plik lub folder został <strong>utworzony</strong>",
     "A file or folder has been <strong>changed</strong>" : "Plik lub folder został <strong>zmieniony</strong>",
@@ -127,8 +127,11 @@ OC.L10N.register(
     "Upload too large" : "Ładowany plik jest za duży",
     "The files you are trying to upload exceed the maximum size for file uploads on this server." : "Pliki, które próbujesz przesłać, przekraczają maksymalną dopuszczalną wielkość.",
     "No favorites" : "Brak ulubionych",
-    "Files and folders you mark as favorite will show up here" : "Pliki i katalogi, które oznaczysz jako ulubione wyświetlą się tutaj",
+    "Files and folders you mark as favorite will show up here" : "Pliki i kataloggi, które oznaczysz jako ulubione wyświetlą się tutaj",
     "Text file" : "Plik tekstowy",
-    "New text file.txt" : "Nowy plik tekstowy.txt"
+    "New text file.txt" : "Nowy plik tekstowy.txt",
+    "share" : "udostępnij",
+    "Search" : "Szukaj",
+    "Add file or folder" : "Dodaj plik lub folder"
 },
 "nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");

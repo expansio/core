@@ -211,6 +211,11 @@ a.two-factor-cancel {
 	background-color:#C3DF60;
 	transition: all 0.5s;
 	border:0px;
+	color:white;
+}
+
+#controls .button.new .text{
+	padding-right:10px;
 }
 
 #controls .button.new:hover, #controls .button.new:active, #controls .button.new:focus{

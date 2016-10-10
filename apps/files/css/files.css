@@ -621,12 +621,12 @@ html.ie8 .column-mtime .selectedActions {
 
 .action .share-tooltip{
     visibility: hidden;
-    width: 50px;
+    width: auto;
     background-color: #1d2d44;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 0;
+    padding: 0 5px;
     position: absolute;
     z-index: 1;
     bottom: 45px;
@@ -634,6 +634,10 @@ html.ie8 .column-mtime .selectedActions {
 	height: 30px;
 	line-height: 30px;
 	opacity:1 !important;
+}
+.action-share .share-tooltip{
+
+	left:50%;
 }
 
 .action .share-tooltip::after {
@@ -827,9 +831,10 @@ html.ie8 #controls .button.new {
 
 .newFileMenu {
 	width: 140px;
-	margin-left: -56px;
+	margin-left: 0;
 	margin-top: 25px;
 	z-index: 1001;
+	height:0;
 }
 
 .newFileMenu .menuitem {

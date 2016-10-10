@@ -99,8 +99,10 @@
 			// which itself triggers the upload dialog.
 			// Currently the upload logic is still in file-upload.js and filelist.js
 			if (action === 'upload') {
+				$('.newFileMenu ul').removeClass('expandMenu');
 				OC.hideMenus();
 			} else {
+				$('.newFileMenu ul').removeClass('expandMenu');
 				event.preventDefault();
 				this.$el.find('.menuitem.active').removeClass('active');
 				$target.addClass('active');

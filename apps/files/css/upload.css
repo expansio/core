@@ -57,11 +57,12 @@
     overflow: hidden;
 }
 #uploadprogressbar .label {
-    top: 6px;
+    top: 0;
     opacity: 1;
     overflow: hidden;
     white-space: nowrap;
 	font-weight: normal;
+	padding:0;
 }
 #uploadprogressbar .label.inner {
     color:white; 
@@ -75,9 +76,11 @@
 }
 #uploadprogressbar .desktop {
 	display: block;
+	line-height:36px;
 }
 #uploadprogressbar .mobile {
 	display: none;
+	line-height:36px;
 }
 
 #uploadprogressbar + stop {
