@@ -352,6 +352,8 @@
 	font-size:14px;
 }
 
+
+
 @media screen and (min-width: 1300px){
 	.comment .comment-date .comment-date--date{
 		font-size:10px;
@@ -366,11 +368,29 @@
 	}
 }
 
+@media screen and (min-width: 1500px){
+
+	.newCommentForm ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		font-size: 17px;
+	}
+	.newCommentForm ::-moz-placeholder { /* Firefox 19+ */
+		font-size: 17px;
+	}
+	.newCommentForm :-ms-input-placeholder { /* IE 10+ */
+		font-size: 17px;
+	}
+	.newCommentForm :-moz-placeholder { /* Firefox 18- */
+		font-size: 17px;
+	}
+}
+
+
 @media screen and (min-width: 1600px){
 
 	.comment .comment-date .comment-date--date{
 		margin: 0;
 	}
+
 }
 
 @media screen and (min-width: 1700px){

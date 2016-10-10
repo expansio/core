@@ -103,6 +103,12 @@
 	}
 }
 
+@media screen and (min-width: 1500px){
+
+	.tabHeaders .tabHeader a.tabHeaderLink{
+		font-size:15px;
+	}
+}
 
 @media screen and (min-width: 1700px){
 
@@ -117,8 +123,9 @@
 	}
 
 	.tabHeaders .tabHeader a.tabHeaderLink{
-		font-size:13px;
+		font-size:17px;
 	}
+
 	.tabHeaders .tabHeader{
 		width:25%;
 	}

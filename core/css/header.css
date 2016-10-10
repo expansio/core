@@ -192,11 +192,14 @@
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-color: rgba(0, 0, 0, 0);
-	border-bottom-color: rgba(255, 255, 255, 0.97);
+	border-bottom-color: #e66b20;
 	border-width: 10px;
 	margin-left: -10px;
 	top: 18px;
+}
+.fileActionsMenu.bubble::after , .newFileMenu.bubble::after{
+
+	border-bottom-color: #e66b20;
 }
 
 /* position of dropdown arrow */
@@ -378,14 +381,21 @@
 	box-sizing: border-box;
 }
 
-#expanddiv a {
+.fileActionsMenu{
+	top:35px;
+}
+
+#expanddiv a  {
 	display: block;
 	height: 40px;
-	color: #454545;
+	color: white;
 	padding: 0 10px;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	opacity: .7;
 	box-sizing: border-box;
+}
+.newFileMenu label span, .newFileMenu a span, .fileActionsMenu  a span{
+	color:white
 }
 
 #expanddiv a img {
@@ -419,8 +429,12 @@
 	top: 0px;
 }
 
-.fileActionsMenu ul . .newFileMenu ul{
-	top:15px
+.newFileMenu ul{
+	top:2px
+}
+
+.fileActionsMenu ul{
+	top:20px;
 }
 
 .fileActionsMenu ul.expandMenu, .newFileMenu ul.expandMenu,
@@ -433,7 +447,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: white;
+	background-color: #e66b20;
 	margin: 5px 0;
 	box-shadow: 1px 1px 1px 1px rgba(50, 50, 50, .2);
 	-webkit-transition: all 0.3s linear;
@@ -515,12 +529,12 @@
 
 .fileActionsMenu ul li:hover, .newFileMenu  ul li:hover,
 #expanddiv ul li:hover {
-	background-color: rgb(220, 246, 195);
+	background-color: rgb(252, 132, 16);
 }
 
 .fileActionsMenu ul li a img, .newFileMenu ul li a img,
 #expanddiv ul li a img {
-	opacity: 0.3;
+	opacity: 0.7;
 	-webkit-transition: all 0.3s linear;
 	-moz-transition: all 0.2s linear;
 	-ms-transition: all 0.2s linear;
@@ -530,13 +544,9 @@
 
 .fileActionsMenu ul li:hover a img,  .newFileMenu ul li:hover a img,
 #expanddiv ul li:hover a img {
-	opacity: 0.4;
+	opacity: 1;
 }
 
-.fileActionsMenu ul li:hover a, .newFileMenu ul li:hover a,
-#expanddiv ul li:hover a {
-	color: #8c8c8c;
-}
 
 #fileList .fileActionsMenu ul li a.action{
 	margin:0 ;
@@ -548,6 +558,17 @@
 
 }
 
+@media screen and (min-width: 1500px){
+	#expanddiv a{
+		font-size:17px;
+	}
+	.newFileMenu label span, .newFileMenu a span, .fileActionsMenu  a span{
+		font-size:17px;
+	}
+	#expanddiv ul li a img{
+		height:20px;
+	}
+}
 /****************
 	Tour guide
 ******************/
@@ -590,6 +611,13 @@
 
 #header #ocToolbar .dijit button {
 	background-size: 15px 15px;
+}
+
+
+@media screen and (min-width: 1500px) {
+	#tourguid button, #expandDisplayName {
+		font-size:17px;
+	}
 }
 
 @media screen and (max-width: 900px) {

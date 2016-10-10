@@ -180,7 +180,7 @@ OC.L10N.register(
     "Share" : "Udostępnij",
     "Share with people on other ownClouds using the syntax username@example.com/owncloud" : "Współdziel z użytkownikami innych chmur ownCloud używając wzorca uzytkownik@example.com/owncloud",
     "Share with users…" : "Współdziel z użytkownikami...",
-    "Share with users, groups or remote users…" : "Współdziel z użytkownikami, grupami lub zdalnym użytkownikiem...",
+    "Share with users, groups or remote users…" : "Współdziel z użytkownikami Expansio Docs - wpisz nazwę",
     "Share with users or groups…" : "Współdziel z użytkownikami lub grupami...",
     "Share with users or remote users…" : "Współdziel z użytkownikami lub zdalnymi użytkownikami...",
     "Error removing share" : "Błąd podczas usuwania współdzielenia",

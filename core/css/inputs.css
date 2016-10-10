@@ -325,7 +325,16 @@ input:disabled+label, input:disabled:hover+label, input:disabled:focus+label {
 	transition: all 0.2s;
 }
 
+
 .newCommentForm input[type="submit"]:hover{
 	background-color: #a6c341;
 }
 
+
+@media screen and (min-width: 1500px) {
+
+	.newCommentForm input[type="submit"]{
+		font-size:16px;
+		padding:5px 15px;
+	}
+}

@@ -152,15 +152,22 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 .icon-delete-white {
 	background-image: url('../img/actions/delete-white.svg');
 }
-
-.icon-details {
-	background-image: url('../img/actions/details.svg');
+.expandMenu .icon-delete{
+	background-image: url('../img/actions/delete-white.svg');
 }
+.icon-details {
+	background-image: url('../img/actions/details - white.svg');
+}
+.expandMenu .icon-details{
 
+}
 .icon-download {
 	background-image: url('../img/actions/download.svg');
 }
 .icon-download-white {
+	background-image: url('../img/actions/download-white.svg');
+}
+.fileActionsMenu .icon-download{
 	background-image: url('../img/actions/download-white.svg');
 }
 
@@ -249,7 +256,7 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 }
 
 .expandMenu .icon-rename {
-	background-image: url('../img/actions/rename - black.svg');
+	background-image: url('../img/actions/rename.svg');
 }
 
 .icon-search {
@@ -358,7 +365,9 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 .icon-filetype-folder {
 	background-image: url('../img/filetypes/folder.svg');
 }
-
+.expandMenu .icon-folder{
+	background-image: url('../img/filetypes/folder - white.svg');
+}
 .icon-home {
 	background-image: url('../img/places/home.svg');
 }
