@@ -20,6 +20,7 @@
 		<link rel="icon" href="<?php print_unescaped(image_path($_['appid'], 'favicon.ico')); /* IE11+ supports png */ ?>">
 		<link rel="apple-touch-icon-precomposed" href="<?php print_unescaped(image_path($_['appid'], 'favicon-touch.png')); ?>">
 		<link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path($_['appid'], 'favicon-mask.svg')); ?>" color="#1d2d44">
+        <link rel='stylesheet' href='/core/css/font-awesome.min.css'>
 
 		<?php foreach($_['cssfiles'] as $cssfile): ?>
 			<link rel="stylesheet" href="<?php print_unescaped($cssfile); ?>">
@@ -37,7 +38,8 @@
 
 	<?php include('layout.noscript.warning.php'); ?>
 	<div id="notification-container">
-		<div id="notification"></div>
+		<div id="notification">
+		<span class='notification-close fa fa-times'></span></div>
 	</div>
 	<header role="banner"><div id="header">
 			<a href="<?php print_unescaped(link_to('', 'index.php')); ?>"

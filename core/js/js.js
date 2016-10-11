@@ -1105,7 +1105,7 @@ OC.Notification = {
 		var self = this;
 		var $notification = $('#notification');
 		if (this.isHidden()) {
-			$notification.fadeIn().css('display', 'inline-block');
+			$notification.slideDown().css('display', 'inline-block');
 		}
 		var $row = $('<div class="row"></div>');
 		if (options.type) {
@@ -1125,14 +1125,16 @@ OC.Notification = {
 
 		$row.prepend(html);
 		$notification.append($row);
-
 		if (options.timeout > 0) {
 			// register timeout to vanish notification
 			this.notificationTimers.push(setTimeout(function () {
 				self.hide($row);
 			}, (options.timeout * 1000)));
 		}
-
+		$('.notification-close').click(function () {
+			self.hide($row);
+			return false;
+		});
 		return $row;
 	},
 

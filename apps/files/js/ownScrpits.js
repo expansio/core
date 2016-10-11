@@ -6,8 +6,8 @@ var form = '<form class="searchbox" action="#" method="post" role="search" noval
 
 
 $(document).ready(function() {
-		$("#app-navigation").append(form);
-		$('#searchbox').on('hover', function(){
-			$('.searchbox-label').toggleClass('hover');
-		});
+	$("#app-navigation").append(form);
+	$('#searchbox').on('hover', function(){
+		$('.searchbox-label').toggleClass('hover');
+	});
 });

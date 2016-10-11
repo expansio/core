@@ -13,15 +13,25 @@
 		OC.Share = {};
 	}
 
+	var text = '<div class="input input--hideo">'+
+		'<input class="input__field input__field--hideo shareWithField" type="text"  id="shareWith-{{cid}}"  placeholder="{{sharePlaceholder}}"  />'+
+		'<label class="input__label input__label--hideo" for="shareWith-{{cid}}" >'+
+		'<i class="fa fa-user icon icon--hideo"></i>'+
+		'<span class="input__label-content input__label-content--hideo hidden-visually">{{shareLabel}}</span>'+
+		'</label>'+
+		'<span class="shareWithLoading icon-loading-small hidden"></span>'+
+	'</div>';
+
 	var TEMPLATE_BASE =
 		'<div class="resharerInfoView subView"></div>' +
 		'{{#if isSharingAllowed}}' +
-		'<label for="shareWith-{{cid}}" class="hidden-visually">{{shareLabel}}</label>' +
-		'<div class="oneline ac-custom ac-checkbox ac-boxfill">' +
-		'    <input id="shareWith-{{cid}}" class="shareWithField" type="text" placeholder="{{sharePlaceholder}}" />' +
-		'    <span class="shareWithLoading icon-loading-small hidden"></span>'+
+		// '<label for="shareWith-{{cid}}" class="hidden-visually">{{shareLabel}}</label>' +
+		// '<div class="oneline ac-custom ac-checkbox ac-boxfill">' +
+		// '    <input id="shareWith-{{cid}}" class="shareWithField" type="text" placeholder="{{sharePlaceholder}}" />' +
+		// '    <span class="shareWithLoading icon-loading-small hidden"></span>'+
+		text +
 		'{{{remoteShareInfo}}}' +
-		'</div>' +
+		//'</div>' +
 		'{{/if}}' +
 		'<div class="shareeListView subView"></div>' +
 		'<div class="linkShareView subView"></div>' +
@@ -441,3 +451,8 @@
 	OC.Share.ShareDialogView = ShareDialogView;
 
 })();
+
+
+
+
+

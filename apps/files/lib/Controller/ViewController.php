@@ -155,7 +155,7 @@ class ViewController extends Controller {
 		$nav = new \OCP\Template('files', 'appnavigation', '');
 
 		// Load the files we need
-		
+
 		\OCP\Util::addStyle('files', 'files');
 		\OCP\Util::addStyle('files', 'upload');
 		\OCP\Util::addStyle('files', 'mobile');
