@@ -267,7 +267,8 @@
 
 /* Hideo */
 input.input__field--hideo {
-	font-size:15px;
+	font-size:18px;
+	font-weight:normal;
 }
 
 .input__field--hideo {
@@ -356,11 +357,6 @@ input.input__field--hideo {
 }
 
 @media screen and (min-width: 1900px){
-
-
-	input.input__field--hideo  {
-		font-size:17px;
-	}
 
 	.input__field--hideo::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 		font-size:14px;

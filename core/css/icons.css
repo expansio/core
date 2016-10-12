@@ -132,6 +132,10 @@ img.icon-loading-small-dark, object.icon-loading-small-dark, video.icon-loading-
 	background-image: url('../img/actions/close.svg');
 }
 
+#app-sidebar .icon-close{
+	background-size: 25px;
+}
+
 .icon-comment {
 	background-image: url('../img/actions/comment.svg');
 }

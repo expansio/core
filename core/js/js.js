@@ -1599,11 +1599,7 @@ function initCore () {
 				$target.closest('#app-settings').length) {
 				return;
 			}
-			if ($target.is('.with-icon') ||
-				$target.closest('.with-icon').length) {
-				alert('aaaaaaaaa');
-				$('.crumb a').click();
-			}
+
 			snapper.close();
 		});
 

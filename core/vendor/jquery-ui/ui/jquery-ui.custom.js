@@ -9893,7 +9893,7 @@ $.widget( "ui.menu", {
 		this._scrollIntoView( item );
 
 		this.active = item.first();
-		focused = this.active.children( "a" ).addClass( "ui-state-focus" );
+		//focused = this.active.children( "a" ).addClass( "ui-state-focus" );
 		// Only update aria-activedescendant if there's a role
 		// otherwise we assume focus is managed elsewhere
 		if ( this.options.role ) {
