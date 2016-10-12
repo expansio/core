@@ -68,6 +68,8 @@
 #shareWithList .shareOption {
 	white-space: nowrap;
 	display: inline-block;
+	padding-top:10px;
+	padding-bottom:20px;
 }
 
 #shareWithList .unshare img, #shareWithList .showCruds img {
@@ -113,8 +115,9 @@
 }
 
 .shareTabView input {
-	background-color: rgba(0, 0, 0, 0);
-	outline: 2px solid rgb(77, 208, 225);
+	background-color: rgb(255, 255, 255);
+	outline: 2px solid rgb(188,  171, 209);
+	border:0;
 }
 
 .shareTabView input[type="checkbox"] {

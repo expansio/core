@@ -150,6 +150,14 @@ input[type="checkbox"].checkbox:hover+label:before, input[type="checkbox"]:focus
 	color:#111 !important;
 }
 
+
+.shareTabView input.checkbox[type="checkbox"] + label::before{
+	background-image: url('../img/actions/checkbox-share.png');
+}
+.shareTabView input.checkbox[type="checkbox"]:checked + label::before{
+	background-image: url('../img/actions/checked-share.png');
+}
+
 input[type="radio"].radio {
 	position: absolute;
 	left:-10000px;

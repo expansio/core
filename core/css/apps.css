@@ -508,7 +508,7 @@ a:hover, a:focus, a:active {
 	width: 27%;
 	min-width: 300px;
 	display: block;
-	background: rgba(214, 235, 252, 0.3);
+	background: rgb(242,249,254);
 	border-left: 1px solid #eee;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -534,7 +534,7 @@ a:hover, a:focus, a:active {
 	width: 250px; /* change to 100% when layout positions are absolute */
 	bottom: 0;
 	z-index: 140;
-
+	display: none;
 }
 
 #app-settings.opened #app-settings-content {

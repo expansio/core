@@ -21,7 +21,7 @@
 		'<filter id="goo-no-comp"> <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/> <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"   result="goo"/> </filter>'+
 		'</defs></svg></div>';
 
-	var text = '<div class="input input--hideo">'+
+	var userInput = '<div class="input input--hideo">'+
 		'<input class="input__field input__field--hideo shareWithField" type="text"  id="shareWith-{{cid}}"  placeholder="{{sharePlaceholder}}"  />'+
 		'<label class="input__label input__label--hideo" for="shareWith-{{cid}}" >'+
 		'<i class="fa fa-user icon icon--hideo"></i>'+
@@ -30,6 +30,7 @@
 		'<span class="shareWithLoading icon-loading-small hidden"></span>'+
 	'</div>';
 
+
 	var TEMPLATE_BASE =
 		'<div class="resharerInfoView subView"></div>' +
 		'{{#if isSharingAllowed}}' +
@@ -37,7 +38,7 @@
 		// '<div class="oneline ac-custom ac-checkbox ac-boxfill">' +
 		// '    <input id="shareWith-{{cid}}" class="shareWithField" type="text" placeholder="{{sharePlaceholder}}" />' +
 		// '    <span class="shareWithLoading icon-loading-small hidden"></span>'+
-		text +
+		userInput +
 		'{{{remoteShareInfo}}}' +
 		//'</div>' +
 		'{{/if}}' +
