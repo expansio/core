@@ -1036,6 +1036,7 @@ OC.Notification = {
 		var self = this;
 		var $notification = $('#notification');
 
+
 		if (_.isFunction($row)) {
 			// first arg is the callback
 			callback = $row;
@@ -1111,17 +1112,16 @@ OC.Notification = {
 		if (options.type) {
 			$row.addClass('type-' + options.type);
 		}
-		if (options.type === 'error') {
-			// add a close button
-			var $closeButton = $('<a class="action close icon-close" href="#"></a>');
-			$closeButton.attr('alt', t('core', 'Dismiss'));
-			$row.append($closeButton);
-			$closeButton.one('click', function () {
-				self.hide($row);
-				return false;
-			});
-			$row.addClass('closeable');
-		}
+
+		var $closeButton = $('<a class="notification-close fa fa-times" href="#"></a>');
+		$closeButton.attr('alt', t('core', 'Dismiss'));
+		$row.append($closeButton);
+		$closeButton.one('click', function () {
+			self.hide($row);
+			return false;
+		});
+		$row.addClass('closeable');
+
 
 		$row.prepend(html);
 		$notification.append($row);
@@ -1598,6 +1598,11 @@ function initCore () {
 			if ($target.is('#app-settings') ||
 				$target.closest('#app-settings').length) {
 				return;
+			}
+			if ($target.is('.with-icon') ||
+				$target.closest('.with-icon').length) {
+				alert('aaaaaaaaa');
+				$('.crumb a').click();
 			}
 			snapper.close();
 		});

@@ -109,6 +109,8 @@
 		registerAppsSlideToggle();
 		$('a.action-share').append('<span>Share</span>');
 
+		$('.notification-container').append("<span class='notification-close fa fa-times'></span>");
+
 		if (window.location.href.indexOf("/settings/") > -1) {
 			$('#app-navigation li > a').css('opacity', '1');
 			$('#app-navigation ul').css('padding-top', '20px');
@@ -134,3 +136,10 @@
 	});
 
 }(document, jQuery, OC));
+
+// $(window).load(function () {
+//
+//
+// 	$('#notification').append("<span class='notification-close fa fa-times'></span>");
+//
+// });

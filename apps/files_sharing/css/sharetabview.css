@@ -107,6 +107,7 @@
 .shareTabView .icon.shareWithRemoteInfo{
 	margin-top:1.1em;
 	margin-left:1.3em;
+	display: none;
 }
 .shareTabView .input .shareWithLoading{
 	right:auto;
@@ -200,7 +201,7 @@
 	position: relative;
 	z-index: 1;
 	margin: 1em 0;
-	max-width: 350px;
+	max-width: 100%;
 	width: calc(100% - 2em);
 	vertical-align: top;
 	display: inline-block;
@@ -265,8 +266,8 @@
 
 
 /* Hideo */
-.input--hideo {
-
+input.input__field--hideo {
+	font-size:15px;
 }
 
 .input__field--hideo {
@@ -342,14 +343,37 @@
 
 
 .input__field--hideo::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	font-size:10px;
+	font-size:13px;
 }
 .input__field--hideo::-moz-placeholder { /* Firefox 19+ */
-	font-size:10px;
+	font-size:13px;
 }
 .input__field--hideo:-ms-input-placeholder { /* IE 10+ */
-	font-size:10px;
+	font-size:13px;
 }
 .input__field--hideo:-moz-placeholder { /* Firefox 18- */
-	font-size:10px;
+	font-size:13px;
+}
+
+@media screen and (min-width: 1900px){
+
+
+	input.input__field--hideo  {
+		font-size:17px;
+	}
+
+	.input__field--hideo::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		font-size:14px;
+	}
+	.input__field--hideo::-moz-placeholder { /* Firefox 19+ */
+		font-size:14px;
+	}
+	.input__field--hideo:-ms-input-placeholder { /* IE 10+ */
+		font-size:14px;
+	}
+	.input__field--hideo:-moz-placeholder { /* Firefox 18- */
+		font-size:14px;
+	}
+
+
 }

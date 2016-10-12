@@ -914,8 +914,17 @@ td.avatar {
 	color: #3b2365;
 	right:0;
 	font-size: 25px;
-	z-index:9;
+	z-index:9999;
 	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.notification-close:hover{
+	color: #8745db;
 }
 
 .notification-close:before{
@@ -934,6 +943,7 @@ td.avatar {
 	position: absolute;
 	right: 0;
 	top: 0;
+	z-index:9999;
 }
 
 #notification .row.closeable {

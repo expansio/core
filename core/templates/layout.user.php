@@ -38,8 +38,7 @@
 
 	<?php include('layout.noscript.warning.php'); ?>
 	<div id="notification-container">
-		<div id="notification">
-		<span class='notification-close fa fa-times'></span></div>
+		<div id="notification"></div>
 	</div>
 	<header role="banner"><div id="header">
 			<a href="<?php print_unescaped(link_to('', 'index.php')); ?>"
