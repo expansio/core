@@ -190,6 +190,9 @@
 				$('#app-content').delegate('>div', 'changeDirectory', function() {
 					search.clear();
 				});
+				$('#app-content').delegate('>div', 'afterChangeDirectory', function () {
+					$('tr').removeClass('hidden');
+				});
 			}
 		}
 	};

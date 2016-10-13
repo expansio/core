@@ -9,6 +9,23 @@
 		</li>
 		<?php } ?>
 	</ul>
+
+
+	<div id='app-download'>
+	    <div class='app-download-elem app-download-elem__computer'>
+	        <a href=''>
+	            <img src='/apps/files/img/laptop.png'/>
+	            <span>Pobierz aplikację do synchronizacji plików pomiędzy Expansio Docs a Twoim komputerem</span>
+	        </a>
+	    </div>
+	    <div class='app-download-elem app-download-elem__phone'>
+	        <a href=''>
+	            <span>Pobierz aplikację mobilną na komórkę</span>
+	            <img src='/apps/files/img/phone.png' />
+	        </a>
+	    </div>
+	</div>
+
 	<div id="app-settings">
 		<div id="app-settings-header">
 			<button class="settings-button" data-apps-slide-toggle="#app-settings-content">

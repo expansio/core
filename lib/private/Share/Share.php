@@ -88,7 +88,6 @@ class Share extends Constants {
 					'supportedFileExtensions' => $supportedFileExtensions
 				);
 				if(count(self::$backendTypes) === 1) {
-					\OC_Util::addScript('core', 'TweenMax.min');
 					\OC_Util::addScript('core', 'shareconfigmodel');
 					\OC_Util::addScript('core', 'shareitemmodel');
 					\OC_Util::addScript('core', 'sharedialogresharerinfoview');
@@ -98,7 +97,6 @@ class Share extends Constants {
 					\OC_Util::addScript('core', 'sharedialogshareelistview');
 					\OC_Util::addScript('core', 'sharedialogview');
 					\OC_Util::addScript('core', 'share');
-					\OC_Util::addScript('core', 'send');
 					\OC_Util::addStyle('core', 'share');
 				}
 				return true;

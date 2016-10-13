@@ -1599,7 +1599,6 @@ function initCore () {
 				$target.closest('#app-settings').length) {
 				return;
 			}
-
 			snapper.close();
 		});
 
