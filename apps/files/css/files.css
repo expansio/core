@@ -431,6 +431,26 @@ table td.filename .nametext .innernametext {
 	}
 }
 
+@media only screen and (min-width: 1900px) {
+	table td.filename .nametext .innernametext ,table td.filename .nametext .extension {
+		max-width: 790px;
+		font-size: 17px;
+	}
+
+	.with-app-sidebar table td.filename .nametext .innernametext {
+		max-width: 390px;
+	}
+
+	table th .columntitle {
+		font-size: 16px;
+	}
+
+	table th .selectedActions a {
+		font-size: 16px;
+	}
+}
+
+
 @media only screen and (min-width: 1366px) and (max-width: 1500px) {
 	table td.filename .nametext .innernametext {
 		max-width: 660px;
@@ -859,7 +879,7 @@ html.ie8 .column-mtime .selectedActions {
 	filter: alpha(opacity=30);
 	opacity: .3;
 	/* add whitespace to bottom of files list to correctly show dropdowns */
-	height: 300px;
+	height: 150px;
 }
 
 .summary:hover,

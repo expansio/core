@@ -2822,9 +2822,16 @@
 					if (!highlightRow) {
 						highlightRow = function($fileRow) {
 							$fileRow.addClass("highlightUploaded");
+
+							$('#box-anim').fadeIn(500);
+
 							setTimeout(function() {
 								$fileRow.removeClass("highlightUploaded");
 							}, 2500);
+
+							setTimeout(function() {
+								$('#box-anim').fadeOut();
+							}, 1800);
 						};
 					}
 

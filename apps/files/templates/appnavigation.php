@@ -10,6 +10,14 @@
 		<?php } ?>
 	</ul>
 
+    <div id="box-anim">
+        <div class="box-wrapper">
+            <div class="box-front">
+                <div class="check"></div>
+            </div>
+            <div class="box-back"></div>
+        </div>
+    </div>
 
 	<div id='app-download'>
 	    <div class='app-download-elem app-download-elem__computer'>
