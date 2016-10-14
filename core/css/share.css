@@ -68,8 +68,11 @@
 #shareWithList .shareOption {
 	white-space: nowrap;
 	display: inline-block;
-	padding-top:10px;
-	padding-bottom:20px;
+	padding-top:5px;
+	padding-left:30px;
+}
+#shareWithList .shareOption:last-of-type {
+	padding-bottom: 20px;
 }
 
 #shareWithList .unshare img, #shareWithList .showCruds img {
