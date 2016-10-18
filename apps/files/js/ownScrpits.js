@@ -10,4 +10,10 @@ $(document).ready(function() {
 	$('#searchbox').on('hover', function(){
 		$('.searchbox-label').toggleClass('hover');
 	});
+
+	$('#app-download-btn').on('click',function () {
+		$(this).find('i').toggleClass('rotate');
+		$('#app-download').toggleClass('hidden-elem');
+	});
+
 });

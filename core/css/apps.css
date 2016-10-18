@@ -124,14 +124,8 @@ a:hover, a:focus, a:active {
 	text-overflow: ellipsis;
 	color: white;
 	opacity: .57;
-	font-size: 110%;
+	font-size: 17px;
 	font-weight: 500;
-}
-
-@media screen and (min-width: 1500px) {
-	#app-navigation li > a {
-		font-size: 17px;
-	}
 }
 
 #app-navigation .active,
@@ -547,7 +541,64 @@ a:hover, a:focus, a:active {
 #app-download .app-download-elem{
 	width:100%;
 	height:170px;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
+
+#app-download .app-download-btn{
+	position: relative;
+	width:100%;
+	height:50px;
+	border:0;
+	outline:0;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	background-color: rgb(0,121,140);
+	color: white;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#app-download .app-download-btn:hover{
+	background-color: rgba(0,121,140, 0.5);
+}
+
+#app-download .app-download-btn i{
+	font-size:45px;
+	line-height:30px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+
+#app-download.hidden-elem .app-download-elem {
+	height:0;
+}
+
+#app-download .app-download-btn i.rotate{
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+
+}
+
 #app-download .app-download-elem a{
 	position: relative;
 	display: flex;

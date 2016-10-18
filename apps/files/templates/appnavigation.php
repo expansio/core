@@ -20,6 +20,9 @@
     </div>
 
 	<div id='app-download'>
+	<button class='app-download-btn' id='app-download-btn'>
+	    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+    </button>
 	    <div class='app-download-elem app-download-elem__computer'>
 	        <a href=''>
 	            <img src='/apps/files/img/laptop.png'/>

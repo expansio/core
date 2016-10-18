@@ -291,6 +291,7 @@ a.two-factor-cancel {
 	position: relative;
 	height: 100%;
 	width: 100%;
+	overflow-y: hidden;
 }
 
 #content .hascontrols {
