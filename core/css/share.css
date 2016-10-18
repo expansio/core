@@ -119,13 +119,29 @@
 
 .shareTabView input {
 	background-color: rgb(255, 255, 255);
-	outline: 2px solid rgb(188,  171, 209);
+	outline: 0;
 	border:0;
+	font-size:15px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.shareTabView input:focus, .shareTabView input:active, .shareTabView input:hover{
+	border:0;
+	outline: 2px solid rgb(188,  171, 209);
 }
 
 .shareTabView input[type="checkbox"] {
 	margin: 0 3px 0 8px;
 	vertical-align: middle;
+}
+
+@media screen and (min-width: 1600px){
+	.shareTabView input {
+		font-size: 17px;
+	}
 }
 
 a.showCruds {
@@ -139,7 +155,7 @@ a.unshare {
 	opacity: .5;
 	padding: 10px;
 	margin-top: -5px;
-	margin-right: -10px;
+	margin-right: 20px;
 }
 
 #link {

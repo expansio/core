@@ -10,6 +10,10 @@
 	margin: 15px 0;
 }
 
+.shareTabView .oneline{
+	margin-bottom:50px;
+}
+
 .shareTabView .shareWithLoading {
 	padding-left: 10px;
 	right: 30px;
@@ -19,6 +23,40 @@
 .shareTabView .shareWithRemoteInfo,
 .shareTabView .clipboardButton {
 	padding-left: 10px;
+}
+.shareTabView .oneline, .shareTabView .linkPass , .expirationDateContainer{
+	position: relative;
+}
+.shareTabView .oneline i,.shareTabView .linkPass i, .expirationDateContainer i{
+	width:40px;
+	height:40px;
+	background-color:rgb(188,171,209);
+	color: #fff;
+	text-align: center;
+	font-size:22px;
+	vertical-align: top;
+	padding-top: 5px;
+}
+
+.shareTabView .clipboardButton{
+	position: absolute;
+	right:0;
+	top:110%;
+	background-color: rgb(195,223,96);
+	color: #fff;
+	padding:8px 15px;
+	font-weight:bold;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.shareTabView .clipboardButton:before{
+	background-color: #a6c341;
 }
 
 .shareTabView label {
@@ -31,26 +69,50 @@
 	vertical-align: middle;
 }
 
-.shareTabView input[type="text"],
-.shareTabView input[type="password"] {
-	width: 94%;
+.shareTabView input[type="password"],
+.shareTabView input[type="text"] {
 	margin-left: 0;
+	width:calc(100% - 60px);
 }
 
-.shareTabView input[type="text"].shareWithField,
-.shareTabView input[type="text"].emailField,
-.shareTabView input[type="text"].linkText {
-	width: 85%;
+.shareTabView input[type="text"].shareWithField {
+	width:calc(100% - 40px);
 }
 
-@media screen and (min-width: 1400px){
+/*.shareTabView input[type="text"].shareWithField {*/
+	/*width:85%;*/
+/*}*/
 
-	.shareTabView input[type="text"].shareWithField,
-	.shareTabView input[type="text"].emailField,
-	.shareTabView input[type="text"].linkText {
-		width: 90%;
-	}
-}
+/*.shareTabView input[type="password"],*/
+/*.shareTabView input[type="text"].linkText,*/
+/*.shareTabView input[type="text"].emailField,*/
+/*.shareTabView input[type="text"].datepicker{*/
+	/*width: 80%;*/
+/*}*/
+
+/*@media screen and (min-width: 1600px){*/
+
+	/*.shareTabView input[type="text"].emailField,*/
+	/*.shareTabView input[type="text"].linkText,*/
+	/*.shareTabView input[type="password"],*/
+	/*.shareTabView input[type="text"] {*/
+		/*width: 85%;*/
+	/*}*/
+	/*.shareTabView input[type="text"].shareWithField,*/
+	/*.shareTabView input[type="text"].emailField{*/
+		/*width: 90%;*/
+	/*}*/
+/*}*/
+
+/*@media screen and (max-width: 1200px){*/
+
+	/*.shareTabView input[type="password"],*/
+	/*.shareTabView input[type="text"].linkText,*/
+	/*.shareTabView input[type="text"].emailField,*/
+	/*.shareTabView input[type="text"].datepicker{*/
+		/*width: 75%;*/
+	/*}*/
+/*}*/
 
 
 .shareTabView form {
@@ -128,8 +190,6 @@
 	bottom:auto;
 	background-color: rgba(0,0,0,0);
 }
-
-
 
 .input {
 	position: relative;
@@ -261,48 +321,40 @@ input.input__field--hideo {
 	width: 40px;
 }
 
-/*.input__field--hideo:focus {*/
-	/*-webkit-transform: translate3d(0, 0, 0);*/
-	/*transform: translate3d(0, 0, 0);*/
-/*}*/
-
-/*.input__field--hideo:focus  + .input__label--hideo::before {*/
-	/*-webkit-transform: scale3d(0.8, 1, 1);*/
-	/*transform: scale3d(0.8, 1, 1);*/
-/*}*/
-
-/*.input__field--hideo:focus + .input__label--hideo .icon--hideo {*/
-	/*-webkit-transform: scale3d(0.6, 0.6, 1);*/
-	/*transform: scale3d(0.6, 0.6, 1);*/
-/*}*/
-
-
+.shareTabView input::-webkit-input-placeholder,
 .input__field--hideo::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	font-size:13px;
+	font-size:14px;
 }
+.shareTabView input::-moz-placeholder,
 .input__field--hideo::-moz-placeholder { /* Firefox 19+ */
-	font-size:13px;
+	font-size:14px;
 }
+.shareTabView input::-ms-input-placeholder,
 .input__field--hideo:-ms-input-placeholder { /* IE 10+ */
-	font-size:13px;
+	font-size:14px;
 }
+.shareTabView input::-moz-placeholder,
 .input__field--hideo:-moz-placeholder { /* Firefox 18- */
-	font-size:13px;
+	font-size:14px;
 }
 
 @media screen and (min-width: 1900px){
 
+	.shareTabView input::-webkit-input-placeholder,
 	.input__field--hideo::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-		font-size:14px;
+		font-size:15px;
 	}
+	.shareTabView input::-moz-placeholder,
 	.input__field--hideo::-moz-placeholder { /* Firefox 19+ */
-		font-size:14px;
+		font-size:15px;
 	}
+	.shareTabView input::-ms-input-placeholder,
 	.input__field--hideo:-ms-input-placeholder { /* IE 10+ */
-		font-size:14px;
+		font-size:15px;
 	}
+	.shareTabView input::-moz-placeholder,
 	.input__field--hideo:-moz-placeholder { /* Firefox 18- */
-		font-size:14px;
+		font-size:15px;
 	}
 
 }

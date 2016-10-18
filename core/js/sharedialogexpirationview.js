@@ -25,6 +25,7 @@
 				'{{#if isExpirationSet}}checked="checked"{{/if}} {{#if disableCheckbox}}disabled="disabled"{{/if}} />' +
 			'<label for="expirationCheckbox-{{cid}}">{{setExpirationLabel}}</label>' +
 			'<div class="expirationDateContainer {{#unless isExpirationSet}}hidden{{/unless}}">' +
+			'<i class="fa fa-calendar"></i>'+
 			'    <label for="expirationDate" class="hidden-visually" value="{{expirationDate}}">{{expirationLabel}}</label>' +
 			'    <input id="expirationDate" class="datepicker" type="text" placeholder="{{expirationDatePlaceholder}}" value="{{expirationValue}}" />' +
 			'</div>' +

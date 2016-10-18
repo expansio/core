@@ -159,6 +159,7 @@ class ViewController extends Controller {
 		\OCP\Util::addStyle('files', 'files');
 		\OCP\Util::addStyle('files', 'upload');
 		\OCP\Util::addStyle('files', 'mobile');
+		\OCP\Util::addStyle('files', 'download');
 		\OCP\Util::addscript('files', 'app');
 		\OCP\Util::addscript('files', 'file-upload');
 		\OCP\Util::addscript('files', 'newfilemenu');
@@ -201,6 +202,7 @@ class ViewController extends Controller {
 
 		\OCP\Util::addscript('files', 'ownScrpits');
 		\OCP\Util::addscript('files', 'animatedLetters');
+
 
 		// if IE8 and "?dir=path&view=someview" was specified, reformat the URL to use a hash like "#?dir=path&view=someview"
 		$isIE8 = $this->request->isUserAgent([Request::USER_AGENT_IE_8]);

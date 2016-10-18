@@ -28,11 +28,13 @@
 	    </div>
 	    <div class='app-download-elem app-download-elem__phone'>
 	        <a href=''>
-	            <span>Pobierz aplikację mobilną na komórkę</span>
 	            <img src='/apps/files/img/phone.png' />
+	            <span>Pobierz aplikację mobilną na komórkę</span>
 	        </a>
 	    </div>
 	</div>
+
+
 
 	<div id="app-settings">
 		<div id="app-settings-header">

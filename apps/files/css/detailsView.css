@@ -122,7 +122,15 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	padding: 15px;
+	padding: 35px;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 	opacity: .5;
+}
+
+#app-sidebar a.close{
+	background-size: 35px;
+	opacity:0.5;
+}
+#app-sidebar a.close:hover{
+	opacity:0.8;
 }

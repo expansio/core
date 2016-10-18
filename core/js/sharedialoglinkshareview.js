@@ -7,7 +7,6 @@
  * See the COPYING-README file.
  *
  */
-
 (function() {
 	if (!OC.Share) {
 		OC.Share = {};
@@ -17,28 +16,17 @@
 	var PASSWORD_PLACEHOLDER_MESSAGE = t('core', 'Choose a password for the public link');
 
 
-
-	var shareLinkInput = '<div class="oneline input input--hideo">'+
-		'<input class="input__field input__field--hideo linkText {{#unless isLinkShare}}hidden{{/unless}}" type="text"  id="shareWith-{{cid}}"  readonly="readonly" value="{{shareLinkURL}}" />'+
-		'<label class="input__label input__label--hideo" for="linkText-{{cid}}" >'+
-		'<i class="fa fa-user icon icon--hideo"></i>'+
-		'<span class="input__label-content input__label-content--hideo hidden-visually">{{urlLabel}}</span>'+
-		'</label>'+
-		'<a class="{{#unless isLinkShare}}hidden-visually{{/unless}} clipboardButton icon icon-clippy" data-clipboard-target="#linkText-{{cid}}"></a>' +
-		'</div>';
-
-
 	var TEMPLATE =
 			'{{#if shareAllowed}}' +
 			'<span class="icon-loading-small hidden"></span>' +
 			'<input type="checkbox" name="linkCheckbox" id="linkCheckbox-{{cid}}" class="checkbox linkCheckbox" value="1" {{#if isLinkShare}}checked="checked"{{/if}} />' +
 			'<label for="linkCheckbox-{{cid}}">{{linkShareLabel}}</label>' +
 			'<br />' +
-
 			'<div class="oneline">' +
+			'<i class="{{#unless isLinkShare}}hidden-visually{{/unless}} fa fa-share"></i>'+
 			'<label for="linkText-{{cid}}" class="hidden-visually">{{urlLabel}}</label>' +
 			'<input id="linkText-{{cid}}" class="linkText {{#unless isLinkShare}}hidden{{/unless}}" type="text" readonly="readonly" value="{{shareLinkURL}}" />' +
-			'<a class="{{#unless isLinkShare}}hidden-visually{{/unless}} clipboardButton icon icon-clippy" data-clipboard-target="#linkText-{{cid}}"></a>' +
+			'<a class="{{#unless isLinkShare}}hidden-visually{{/unless}} clipboardButton" data-clipboard-target="#linkText-{{cid}}">'+t('core','Copy link')+'</a>' +
 			'</div>' +
 
 			'    {{#if publicUpload}}' +
@@ -47,12 +35,14 @@
 			'    <input type="checkbox" value="1" name="allowPublicUpload" id="sharingDialogAllowPublicUpload-{{cid}}" class="checkbox publicUploadCheckbox" {{{publicUploadChecked}}} />' +
 			'<label for="sharingDialogAllowPublicUpload-{{cid}}">{{publicUploadLabel}}</label>' +
 			'</div>' +
-			'    {{/if}}' +			
+			'    {{/if}}' +
+
 			'    {{#if showPasswordCheckBox}}' +
 			'<input type="checkbox" name="showPassword" id="showPassword-{{cid}}" class="checkbox showPasswordCheckbox" {{#if isPasswordSet}}checked="checked"{{/if}} value="1" />' +
 			'<label for="showPassword-{{cid}}">{{enablePasswordLabel}}</label>' +
 			'    {{/if}}' +
 			'<div id="linkPass" class="linkPass {{#unless isPasswordSet}}hidden{{/unless}}">' +
+			'<i class="fa fa-lock"></i>'+
 			'    <label for="linkPassText-{{cid}}" class="hidden-visually">{{passwordLabel}}</label>' +
 			'    <input id="linkPassText-{{cid}}" class="linkPassText" type="password" placeholder="{{passwordPlaceholder}}" />' +
 			'    <span class="icon-loading-small hidden"></span>' +

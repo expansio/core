@@ -301,6 +301,7 @@ OC.L10N.register(
     "Update needed" : "Wymagana aktualizacja",
     "Please use the command line updater because you have a big instance." : "Ze względu na rozmiar Twojej instalacji użyj programu do aktualizacji z linii poleceń.",
     "For help, see the  <a target=\"_blank\" rel=\"noreferrer\" href=\"%s\">documentation</a>." : "Aby uzyskać pomoc, zajrzyj do <a target=\"_blank\" rel=\"noreferrer\" href=\"%s\">dokumentacji</a>.",
-    "This page will refresh itself when the %s instance is available again." : "Strona odświeży się gdy instancja %s będzie ponownie dostępna."
+    "This page will refresh itself when the %s instance is available again." : "Strona odświeży się gdy instancja %s będzie ponownie dostępna.",
+    "Copy link" : "Skopiuj link"
 },
 "nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");

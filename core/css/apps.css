@@ -556,12 +556,79 @@ a:hover, a:focus, a:active {
 	height:170px;
 	padding:3%;
 	color:white;
-	font-size: 16px;
+	font-size: 15px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+}
+#app-download .app-download-elem a img{
+	position: absolute;
+	left:-20%;
+	height:90%;
+	top:5%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#app-download  .app-download-elem__computer a img{
+	left:-35%;
+	top:17%;
+	height:80%;
+}
+
+
+#app-download .app-download-elem a span{
+	position: absolute;
+	right:5px;
+	top:50%;
+	width:60%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: center;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+#app-download  .app-download-elem__computer a span{
+	top:45%;
+}
+
+#app-download  .app-download-elem__phone a span{
+	width:65%;
+}
+
+#app-download  .app-download-elem a:hover img,
+#app-download  .app-download-elem a:focus img,
+#app-download  .app-download-elem a:active img{
+	height:80%;
+	top:10%;
+}
+
+#app-download  .app-download-elem__computer a:hover img,
+#app-download  .app-download-elem__computer a:focus img,
+#app-download  .app-download-elem__computer a:active img{
+	left:-35%;
+	top:23%;
+	height:70%;
+}
+
+#app-download  .app-download-elem a:hover span,
+#app-download  .app-download-elem a:focus span,
+#app-download  .app-download-elem a:active span{
+	font-size:17px;
+	width:70%;
 }
 
 #app-download .app-download-elem a::after{
@@ -585,37 +652,8 @@ a:hover, a:focus, a:active {
 }
 
 #app-download .app-download-elem a *{
-	margin:auto;
-	position: relative;
 	z-index: 10;
 }
-#app-download .app-download-elem a img{
-	width:auto;
-	height:auto;
-	max-height:60px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-#app-download  .app-download-elem a:hover img,
-#app-download  .app-download-elem a:focus img,
-#app-download  .app-download-elem a:active img{
-	max-height:70px;
-}
-
-#app-download .app-download-elem a span{
-	max-width:70%;
-	text-align: center;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
 
 #app-download  .app-download-elem__computer a{
 	background-color: rgb(255,107,107);
@@ -626,13 +664,6 @@ a:hover, a:focus, a:active {
 #app-download  .app-download-elem__computer a::after
 {
 	background-color: rgb(252,159,159);
-}
-
-#app-download  .app-download-elem__computer a img{
-}
-
-#app-download  .app-download-elem__computer a span{
-	padding-left:4%;
 }
 
 #app-download  .app-download-elem__phone a{
@@ -646,13 +677,6 @@ a:hover, a:focus, a:active {
 	background-color: #B99DCF;
 }
 
-#app-download .app-download-elem__phone a img{
-
-}
-
-#app-download  .app-download-elem__phone a span{
-	padding-right:4%;
-}
 
 @media screen and (max-height: 620px){
 
