@@ -25,14 +25,24 @@
     </button>
 	    <div class='app-download-elem app-download-elem__computer'>
 	        <a href=''>
-	            <img src='/apps/files/img/laptop.png'/>
-	            <span>Pobierz aplikację do synchronizacji plików pomiędzy Expansio Docs a Twoim komputerem</span>
-	        </a>
+                <div class='app-download-img'>
+                    <img src='/apps/files/img/laptop.png'/>
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                </div>
+                <div class='app-download-text'>
+                   <span>Pobierz aplikację do synchronizacji plików pomiędzy Expansio Docs a Twoim komputerem</span>
+                </div>
+           </a>
 	    </div>
 	    <div class='app-download-elem app-download-elem__phone'>
 	        <a href=''>
-	            <img src='/apps/files/img/phone.png' />
-	            <span>Pobierz aplikację mobilną na komórkę</span>
+                <div class='app-download-img'>
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    <img src='/apps/files/img/phone.png' />
+                </div>
+                <div class='app-download-text'>
+                    <span>Pobierz aplikację mobilną na komórkę</span>
+                </div>
 	        </a>
 	    </div>
 	</div>

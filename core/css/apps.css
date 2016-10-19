@@ -599,211 +599,280 @@ a:hover, a:focus, a:active {
 
 }
 
-#app-download .app-download-elem a{
+#app-download .app-download-elem a {
 	position: relative;
-	display: flex;
-	display: -webkit-flex;
-	width:250px;
-	height:170px;
-	padding:3%;
-	color:white;
+	width: 250px;
+	height: 170px;
+	color: white;
 	font-size: 15px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	overflow: hidden;
+	display: block;
 }
-#app-download .app-download-elem a img{
-	position: absolute;
-	left:-20%;
-	height:90%;
-	top:5%;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-#app-download  .app-download-elem__computer a img{
-	left:-35%;
-	top:17%;
-	height:80%;
-}
-
-
-#app-download .app-download-elem a span{
-	position: absolute;
-	right:5px;
-	top:50%;
-	width:60%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	text-align: center;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-
-#app-download  .app-download-elem__computer a span{
-	top:45%;
-}
-
-#app-download  .app-download-elem__phone a span{
-	width:65%;
-}
-
-#app-download  .app-download-elem a:hover img,
-#app-download  .app-download-elem a:focus img,
-#app-download  .app-download-elem a:active img{
-	height:80%;
-	top:10%;
-}
-
-#app-download  .app-download-elem__computer a:hover img,
-#app-download  .app-download-elem__computer a:focus img,
-#app-download  .app-download-elem__computer a:active img{
-	left:-35%;
-	top:23%;
-	height:70%;
-}
-
-#app-download  .app-download-elem a:hover span,
-#app-download  .app-download-elem a:focus span,
-#app-download  .app-download-elem a:active span{
-	font-size:17px;
-	width:70%;
-}
-
-#app-download .app-download-elem a::after{
-	content: '';
-	position: absolute;
-	top:0;
-	left:0;
-	height:170px;
-	width:0;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-#app-download  .app-download-elem a:hover::after,
-#app-download  .app-download-elem a:focus::after,
-#app-download  .app-download-elem a:active::after{
-	width:250px;
-}
-
-#app-download .app-download-elem a *{
-	z-index: 10;
-}
-
 #app-download  .app-download-elem__computer a{
 	background-color: rgb(255,107,107);
-}
-
-#app-download  .app-download-elem__computer a::after,
-#app-download  .app-download-elem__computer a::after,
-#app-download  .app-download-elem__computer a::after
-{
-	background-color: rgb(252,159,159);
 }
 
 #app-download  .app-download-elem__phone a{
 	background-color: rgb(134,94,164);
 }
-
-#app-download  .app-download-elem__phone  a::after,
-#app-download  .app-download-elem__phone  a::after,
-#app-download  .app-download-elem__phone  a::after
-{
-	background-color: #B99DCF;
+#app-download .app-download-elem a div{
+	width: 250px;
+	height: 170px;
+	position:absolute;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-content:center;
+}
+#app-download .app-download-elem a div img{
+	max-height: 75%;
+	height: auto;
+	width:auto;
+	margin-top:12.5%;
 }
 
+#app-download .app-download-elem a div i{
+	line-height: 170px;
+	font-size:40px;
+}
 
-@media screen and (max-height: 620px){
+#app-download  .app-download-elem__computer a div img{
+	max-height:60%;
+	margin-top:20%;
+}
 
-	#app-download .app-download-elem{
-		height:120px;
+#app-download .app-download-elem  .app-download-img{
+	left:0;
+	top:0;
+}
+
+#app-download .app-download-elem  .app-download-text {
+	left: 100%;
+	top: 0;
+}
+#app-download .app-download-elem  .app-download-text span{
+	margin:auto 15px;
+	text-align: center;
+	font-size:18px;
+}
+
+#app-download .app-download-elem a:hover .app-download-img{
+	left:-100%;
+	top:0;
+}
+
+#app-download .app-download-elem a:hover .app-download-text{
+	left:0;
+	top:0;
+}
+
+@media screen and (max-height: 610px){
+
+	#app-download .app-download-elem, #app-download .app-download-elem a, #app-download .app-download-elem a div {
+	 	height: 120px;
 	}
-	#app-download .app-download-elem a{
-		height:120px;
-		padding:3%;
-		font-size: 14px;
+
+	#app-download .app-download-elem a div i{
+		line-height: 120px;
 	}
 
-	#app-download .app-download-elem a::after{
-		height:120px;
+	#app-download .app-download-elem  .app-download-text span{
+		font-size:16px;
 	}
 }
 
-@media screen and (max-height: 500px){
+	/*#app-download .app-download-elem a img{*/
+	/*position: absolute;*/
+	/*left:-20%;*/
+	/*height:90%;*/
+	/*top:5%;*/
+	/*-webkit-transition: all 0.3s;*/
+	/*-moz-transition: all 0.3s;*/
+	/*-ms-transition: all 0.3s;*/
+	/*-o-transition: all 0.3s;*/
+	/*transition: all 0.3s;*/
+/*}*/
 
-	#app-download .app-download-elem{
-		height:80px;
-	}
-	#app-download .app-download-elem a{
-		height:80px;
-		padding:2%;
-		font-size: 13px;
-	}
+/*#app-download  .app-download-elem__computer a img{*/
+	/*left:-35%;*/
+	/*top:17%;*/
+	/*height:80%;*/
+/*}*/
 
-	#app-download .app-download-elem a::after{
-		height:80px;
-	}
-	#app-download .app-download-elem a span {
-		max-width: 85%;
-	}
-	#app-download .app-download-elem a img {
-		max-height: 45px;
-	}
-	#app-download  .app-download-elem a:hover img,
-	#app-download  .app-download-elem a:focus img,
-	#app-download  .app-download-elem a:active img{
-		max-height:55px;
-	}
-	#app-download  .app-download-elem__computer a span{
-		padding-left:2%;
-	}
-	#app-download  .app-download-elem__phone a span{
-		padding-right:2%;
-	}
-}
 
-@media screen and (max-height: 420px){
+/*#app-download .app-download-elem a span{*/
+	/*position: absolute;*/
+	/*right:5px;*/
+	/*top:50%;*/
+	/*width:60%;*/
+	/*-webkit-transform: translateY(-50%);*/
+	/*-moz-transform: translateY(-50%);*/
+	/*-ms-transform: translateY(-50%);*/
+	/*-o-transform: translateY(-50%);*/
+	/*transform: translateY(-50%);*/
+	/*text-align: center;*/
+	/*-webkit-transition: all 0.3s;*/
+	/*-moz-transition: all 0.3s;*/
+	/*-ms-transition: all 0.3s;*/
+	/*-o-transition: all 0.3s;*/
+	/*transition: all 0.3s;*/
+/*}*/
 
-	#app-download .app-download-elem{
-		height:60px;
-	}
-	#app-download .app-download-elem a{
-		height:60px;
-		padding:2%;
-		font-size: 12px;
-	}
 
-	#app-download .app-download-elem a::after{
-		height:70px;
-	}
-	#app-download .app-download-elem a span {
-		max-width: 85%;
-	}
-	#app-download .app-download-elem a img {
-		max-height: 40px;
-	}
-	#app-download  .app-download-elem a:hover img,
-	#app-download  .app-download-elem a:focus img,
-	#app-download  .app-download-elem a:active img{
-		max-height:50px;
-	}
-}
+/*#app-download  .app-download-elem__computer a span{*/
+	/*top:45%;*/
+/*}*/
+
+/*#app-download  .app-download-elem__phone a span{*/
+	/*width:65%;*/
+/*}*/
+
+/*#app-download  .app-download-elem a:hover img,*/
+/*#app-download  .app-download-elem a:focus img,*/
+/*#app-download  .app-download-elem a:active img{*/
+	/*height:80%;*/
+	/*top:10%;*/
+/*}*/
+
+/*#app-download  .app-download-elem__computer a:hover img,*/
+/*#app-download  .app-download-elem__computer a:focus img,*/
+/*#app-download  .app-download-elem__computer a:active img{*/
+	/*left:-35%;*/
+	/*top:23%;*/
+	/*height:70%;*/
+/*}*/
+
+/*#app-download  .app-download-elem a:hover span,*/
+/*#app-download  .app-download-elem a:focus span,*/
+/*#app-download  .app-download-elem a:active span{*/
+	/*font-size:17px;*/
+	/*width:70%;*/
+/*}*/
+
+/*#app-download .app-download-elem a::after{*/
+	/*content: '';*/
+	/*position: absolute;*/
+	/*top:0;*/
+	/*left:0;*/
+	/*height:170px;*/
+	/*width:0;*/
+	/*-webkit-transition: all 0.3s;*/
+	/*-moz-transition: all 0.3s;*/
+	/*-ms-transition: all 0.3s;*/
+	/*-o-transition: all 0.3s;*/
+	/*transition: all 0.3s;*/
+/*}*/
+
+/*#app-download  .app-download-elem a:hover::after,*/
+/*#app-download  .app-download-elem a:focus::after,*/
+/*#app-download  .app-download-elem a:active::after{*/
+	/*width:250px;*/
+/*}*/
+
+/*#app-download .app-download-elem a *{*/
+	/*z-index: 10;*/
+/*}*/
+
+/*#app-download  .app-download-elem__computer a::after,*/
+/*#app-download  .app-download-elem__computer a::after,*/
+/*#app-download  .app-download-elem__computer a::after*/
+/*{*/
+	/*background-color: rgb(252,159,159);*/
+/*}*/
+
+/*#app-download  .app-download-elem__phone  a::after,*/
+/*#app-download  .app-download-elem__phone  a::after,*/
+/*#app-download  .app-download-elem__phone  a::after*/
+/*{*/
+	/*background-color: #B99DCF;*/
+/*}*/
+
+
+/*@media screen and (max-height: 620px){*/
+
+	/*#app-download .app-download-elem{*/
+		/*height:120px;*/
+	/*}*/
+	/*#app-download .app-download-elem a{*/
+		/*height:120px;*/
+		/*padding:3%;*/
+		/*font-size: 14px;*/
+	/*}*/
+
+	/*#app-download .app-download-elem a::after{*/
+		/*height:120px;*/
+	/*}*/
+/*}*/
+
+/*@media screen and (max-height: 500px){*/
+
+	/*#app-download .app-download-elem{*/
+		/*height:80px;*/
+	/*}*/
+	/*#app-download .app-download-elem a{*/
+		/*height:80px;*/
+		/*padding:2%;*/
+		/*font-size: 13px;*/
+	/*}*/
+
+	/*#app-download .app-download-elem a::after{*/
+		/*height:80px;*/
+	/*}*/
+	/*#app-download .app-download-elem a span {*/
+		/*max-width: 85%;*/
+	/*}*/
+	/*#app-download .app-download-elem a img {*/
+		/*max-height: 45px;*/
+	/*}*/
+	/*#app-download  .app-download-elem a:hover img,*/
+	/*#app-download  .app-download-elem a:focus img,*/
+	/*#app-download  .app-download-elem a:active img{*/
+		/*max-height:55px;*/
+	/*}*/
+	/*#app-download  .app-download-elem__computer a span{*/
+		/*padding-left:2%;*/
+	/*}*/
+	/*#app-download  .app-download-elem__phone a span{*/
+		/*padding-right:2%;*/
+	/*}*/
+/*}*/
+
+/*@media screen and (max-height: 420px){*/
+
+	/*#app-download .app-download-elem{*/
+		/*height:60px;*/
+	/*}*/
+	/*#app-download .app-download-elem a{*/
+		/*height:60px;*/
+		/*padding:2%;*/
+		/*font-size: 12px;*/
+	/*}*/
+
+	/*#app-download .app-download-elem a::after{*/
+		/*height:70px;*/
+	/*}*/
+	/*#app-download .app-download-elem a span {*/
+		/*max-width: 85%;*/
+	/*}*/
+	/*#app-download .app-download-elem a img {*/
+		/*max-height: 40px;*/
+	/*}*/
+	/*#app-download  .app-download-elem a:hover img,*/
+	/*#app-download  .app-download-elem a:focus img,*/
+	/*#app-download  .app-download-elem a:active img{*/
+		/*max-height:50px;*/
+	/*}*/
+/*}*/
 
 /* APP-SETTINGS ---------------------------------------------------------------*/
 

@@ -15,5 +15,15 @@ $(document).ready(function() {
 		$(this).find('i').toggleClass('rotate');
 		$('#app-download').toggleClass('hidden-elem');
 	});
+	if ($('#app-navigation').height() < 445) {
+		$(this).find('i').addClass('rotate');
+		$('#app-download').addClass('hidden-elem');
+	}
+});
 
+$( window ).resize(function() {
+	if ($('#app-navigation').height() < 445) {
+		$(this).find('i').addClass('rotate');
+		$('#app-download').addClass('hidden-elem');
+	}
 });
